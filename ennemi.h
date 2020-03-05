@@ -11,3 +11,6 @@ typedef struct ennemis
 }ennemis;
 
 void initialiserennemi(ennemis *ennemi);
+
+
+#endif
