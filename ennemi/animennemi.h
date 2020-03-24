@@ -24,6 +24,6 @@ typedef struct ennemi
 }ennemi;
 
 
-void animEnm (ennemi e, SDL_Surface *screen,SDL_Surface *background);
+void animEnm (ennemi *e, SDL_Surface *screen,SDL_Surface *background);
 
 #endif
