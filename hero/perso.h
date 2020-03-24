@@ -12,16 +12,18 @@
 
 #include "SDL/SDL_ttf.h"
 
-
+typedef struct background
+{
+	SDL_Surface *background;
+	SDL_Rect posbg;
+	int dx,fx,dy,fy;
+}background;
 
 
 typedef struct vie 
 {
 	int nbredevie ;
-	SDL_Surface * vie1 ;
-	SDL_Surface * vie2 ;	
-	SDL_Surface * vie3 ;
-	SDL_Surface * vie0 ;
+	SDL_Surface *vie[4];
 	SDL_Rect position_de_vie ; 
 	
 }vie  ;
@@ -51,7 +53,7 @@ typedef struct personnage
      } personnage;
 
 personnage initperso (personnage c);
-void affichageperso(personnage c, SDL_Surface * screen,SDL_Surface *background,SDL_Rect back);
-void animperso (personnage *c, SDL_Surface *screen,SDL_Surface *background,SDL_Rect back);
+void affichageperso(personnage c, SDL_Surface * screen);
+void animperso (personnage *c, SDL_Surface *screen);
 
 #endif
