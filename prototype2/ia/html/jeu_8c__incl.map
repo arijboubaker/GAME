@@ -1,0 +1,8 @@
+<map id="jeu.c" name="jeu.c">
+<area shape="rect" id="node2" href="$jeu_8h.html" title="jeu.h" alt="" coords="196,80,247,107"/>
+<area shape="rect" id="node4" href="$defs_8h.html" title="defs.h" alt="" coords="9,304,68,331"/>
+<area shape="rect" id="node5" href="$background_8h.html" title="background.h" alt="" coords="33,229,133,256"/>
+<area shape="rect" id="node6" href="$ennemi_8h.html" title="ennemi.h" alt="" coords="133,155,208,181"/>
+<area shape="rect" id="node8" href="$hero_8h.html" title="hero.h" alt="" coords="244,155,303,181"/>
+<area shape="rect" id="node9" href="$text_8h.html" title="text.h" alt="" coords="575,155,630,181"/>
+</map>

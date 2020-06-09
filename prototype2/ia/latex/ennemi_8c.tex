@@ -1,0 +1,177 @@
+\hypertarget{ennemi_8c}{}\section{ennemi.\+c File Reference}
+\label{ennemi_8c}\index{ennemi.\+c@{ennemi.\+c}}
+{\ttfamily \#include \char`\"{}ennemi.\+h\char`\"{}}\newline
+Include dependency graph for ennemi.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{ennemi_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ennemi_8c_afde13914c19c18b1e242aa74218633e1}{init\+\_\+ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$E, char $\ast$path)
+\item 
+int \hyperlink{ennemi_8c_aab02c87cdc44eb526fba24e52342a999}{load\+Ennemi\+Images} (\hyperlink{structEnnemi}{Ennemi} $\ast$A, char $\ast$path)
+\item 
+void \hyperlink{ennemi_8c_a33539862b507334c5b122af3ca87585c}{init\+Ennemi\+Attributes} (\hyperlink{structEnnemi}{Ennemi} $\ast$E)
+\item 
+void \hyperlink{ennemi_8c_a4a6d168704004408735192346353ec89}{display\+\_\+ennemi} (\hyperlink{structEnnemi}{Ennemi} E, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\item 
+void \hyperlink{ennemi_8c_aba87f4048a9174ed4da1bfdacdb48e7a}{animate\+Ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$E)
+\item 
+void \hyperlink{ennemi_8c_a6e1dcb4906c388746dde0f9319478444}{move\+Ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$E, S\+D\+L\+\_\+\+Rect pos\+Hero)
+\item 
+void \hyperlink{ennemi_8c_aeb35ec28dc6bb5926a0f122f46abb838}{update\+\_\+ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$E, S\+D\+L\+\_\+\+Rect pos\+Hero)
+\item 
+void \hyperlink{ennemi_8c_a94a78c5e97a5507ab163f99d68678965}{update\+Ennemi\+State} (\hyperlink{structEnnemi}{Ennemi} $\ast$E, int dist\+EH)
+\item 
+void \hyperlink{ennemi_8c_af0b8bd6f8504f557621c6d0c1b84bcdc}{free\+Ennemi} (\hyperlink{structEnnemi}{Ennemi} $\ast$E)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ennemi_8c_aba87f4048a9174ed4da1bfdacdb48e7a}\label{ennemi_8c_aba87f4048a9174ed4da1bfdacdb48e7a}} 
+\index{ennemi.\+c@{ennemi.\+c}!animate\+Ennemi@{animate\+Ennemi}}
+\index{animate\+Ennemi@{animate\+Ennemi}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{animate\+Ennemi()}{animateEnnemi()}}
+{\footnotesize\ttfamily void animate\+Ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8c_aba87f4048a9174ed4da1bfdacdb48e7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_a4a6d168704004408735192346353ec89}\label{ennemi_8c_a4a6d168704004408735192346353ec89}} 
+\index{ennemi.\+c@{ennemi.\+c}!display\+\_\+ennemi@{display\+\_\+ennemi}}
+\index{display\+\_\+ennemi@{display\+\_\+ennemi}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{display\+\_\+ennemi()}{display\_ennemi()}}
+{\footnotesize\ttfamily void display\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi}}]{E,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{ennemi_8c_a4a6d168704004408735192346353ec89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_af0b8bd6f8504f557621c6d0c1b84bcdc}\label{ennemi_8c_af0b8bd6f8504f557621c6d0c1b84bcdc}} 
+\index{ennemi.\+c@{ennemi.\+c}!free\+Ennemi@{free\+Ennemi}}
+\index{free\+Ennemi@{free\+Ennemi}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{free\+Ennemi()}{freeEnnemi()}}
+{\footnotesize\ttfamily void free\+Ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{ennemi_8c_af0b8bd6f8504f557621c6d0c1b84bcdc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_afde13914c19c18b1e242aa74218633e1}\label{ennemi_8c_afde13914c19c18b1e242aa74218633e1}} 
+\index{ennemi.\+c@{ennemi.\+c}!init\+\_\+ennemi@{init\+\_\+ennemi}}
+\index{init\+\_\+ennemi@{init\+\_\+ennemi}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+ennemi()}{init\_ennemi()}}
+{\footnotesize\ttfamily int init\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E,  }\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{ennemi_8c_afde13914c19c18b1e242aa74218633e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{ennemi_8c_afde13914c19c18b1e242aa74218633e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_a33539862b507334c5b122af3ca87585c}\label{ennemi_8c_a33539862b507334c5b122af3ca87585c}} 
+\index{ennemi.\+c@{ennemi.\+c}!init\+Ennemi\+Attributes@{init\+Ennemi\+Attributes}}
+\index{init\+Ennemi\+Attributes@{init\+Ennemi\+Attributes}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{init\+Ennemi\+Attributes()}{initEnnemiAttributes()}}
+{\footnotesize\ttfamily void init\+Ennemi\+Attributes (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8c_a33539862b507334c5b122af3ca87585c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_aab02c87cdc44eb526fba24e52342a999}\label{ennemi_8c_aab02c87cdc44eb526fba24e52342a999}} 
+\index{ennemi.\+c@{ennemi.\+c}!load\+Ennemi\+Images@{load\+Ennemi\+Images}}
+\index{load\+Ennemi\+Images@{load\+Ennemi\+Images}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{load\+Ennemi\+Images()}{loadEnnemiImages()}}
+{\footnotesize\ttfamily int load\+Ennemi\+Images (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{A,  }\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8c_aab02c87cdc44eb526fba24e52342a999_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_a6e1dcb4906c388746dde0f9319478444}\label{ennemi_8c_a6e1dcb4906c388746dde0f9319478444}} 
+\index{ennemi.\+c@{ennemi.\+c}!move\+Ennemi@{move\+Ennemi}}
+\index{move\+Ennemi@{move\+Ennemi}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{move\+Ennemi()}{moveEnnemi()}}
+{\footnotesize\ttfamily void move\+Ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E,  }\item[{S\+D\+L\+\_\+\+Rect}]{pos\+Hero }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8c_a6e1dcb4906c388746dde0f9319478444_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_aeb35ec28dc6bb5926a0f122f46abb838}\label{ennemi_8c_aeb35ec28dc6bb5926a0f122f46abb838}} 
+\index{ennemi.\+c@{ennemi.\+c}!update\+\_\+ennemi@{update\+\_\+ennemi}}
+\index{update\+\_\+ennemi@{update\+\_\+ennemi}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+ennemi()}{update\_ennemi()}}
+{\footnotesize\ttfamily void update\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E,  }\item[{S\+D\+L\+\_\+\+Rect}]{pos\+Hero }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{ennemi_8c_aeb35ec28dc6bb5926a0f122f46abb838_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{ennemi_8c_aeb35ec28dc6bb5926a0f122f46abb838_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ennemi_8c_a94a78c5e97a5507ab163f99d68678965}\label{ennemi_8c_a94a78c5e97a5507ab163f99d68678965}} 
+\index{ennemi.\+c@{ennemi.\+c}!update\+Ennemi\+State@{update\+Ennemi\+State}}
+\index{update\+Ennemi\+State@{update\+Ennemi\+State}!ennemi.\+c@{ennemi.\+c}}
+\subsubsection{\texorpdfstring{update\+Ennemi\+State()}{updateEnnemiState()}}
+{\footnotesize\ttfamily void update\+Ennemi\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structEnnemi}{Ennemi} $\ast$}]{E,  }\item[{int}]{dist\+EH }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8c_a94a78c5e97a5507ab163f99d68678965_icgraph}
+\end{center}
+\end{figure}

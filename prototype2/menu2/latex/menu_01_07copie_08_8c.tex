@@ -1,0 +1,439 @@
+\hypertarget{menu_01_07copie_08_8c}{}\section{menu (copie).c File Reference}
+\label{menu_01_07copie_08_8c}\index{menu (copie).\+c@{menu (copie).\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+Include dependency graph for menu (copie).c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a6ed81a9b60090a7e012e1c6a57bbbe57}{initialiser} (\hyperlink{structObjet}{Objet} $\ast$newgame, \hyperlink{structObjet}{Objet} $\ast$loadgame, \hyperlink{structObjet}{Objet} $\ast$settings, \hyperlink{structObjet}{Objet} $\ast$icon, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound25, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound50, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound75, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound100, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+settings, \hyperlink{structObjet}{Objet} $\ast$credits, \hyperlink{structObjet}{Objet} $\ast$main\+\_\+menu, \hyperlink{structObjet}{Objet} $\ast$quitter, \hyperlink{structObjet}{Objet} $\ast$wexit, \hyperlink{structObjet}{Objet} $\ast$nwexit, \hyperlink{structObjet}{Objet} $\ast$exxit, \hyperlink{structObjet}{Objet} $\ast$game, \hyperlink{structObjet}{Objet} $\ast$j1, \hyperlink{structObjet}{Objet} $\ast$j2, \hyperlink{structObjet}{Objet} $\ast$joueur, \hyperlink{structObjet}{Objet} $\ast$mode, \hyperlink{structObjet}{Objet} $\ast$souris, \hyperlink{structObjet}{Objet} $\ast$clavier, \hyperlink{structObjet}{Objet} $\ast$manette)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a74ff2595edb8cb817eeab72f1662171f}{setup} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structObjet}{Objet} $\ast$game, \hyperlink{structObjet}{Objet} $\ast$icon)
+\item 
+int \hyperlink{menu_01_07copie_08_8c_abe842397d22ae8a423936cc41bba4845}{verif\+\_\+motion\+\_\+surface} (S\+D\+L\+\_\+\+Event event, \hyperlink{structObjet}{Objet} surface)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a989655a408019727ed1e4f69cc6cb4e7}{update} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structObjet}{Objet} $\ast$surface1, \hyperlink{structObjet}{Objet} $\ast$surface2)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_aee999999e7b274237009a249b0227564}{liberate} (\hyperlink{structObjet}{Objet} $\ast$newgame, \hyperlink{structObjet}{Objet} $\ast$loadgame, \hyperlink{structObjet}{Objet} $\ast$settings, \hyperlink{structObjet}{Objet} $\ast$icon, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound25, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound50, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound75, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+sound100, \hyperlink{structObjet}{Objet} $\ast$in\+\_\+settings, \hyperlink{structObjet}{Objet} $\ast$credits, \hyperlink{structObjet}{Objet} $\ast$main\+\_\+menu, \hyperlink{structObjet}{Objet} $\ast$quitter, \hyperlink{structObjet}{Objet} $\ast$wexit, \hyperlink{structObjet}{Objet} $\ast$nwexit, \hyperlink{structObjet}{Objet} $\ast$exxit, \hyperlink{structObjet}{Objet} $\ast$game, \hyperlink{structObjet}{Objet} $\ast$j1, \hyperlink{structObjet}{Objet} $\ast$j2, \hyperlink{structObjet}{Objet} $\ast$joueur, \hyperlink{structObjet}{Objet} $\ast$mode, \hyperlink{structObjet}{Objet} $\ast$souris, \hyperlink{structObjet}{Objet} $\ast$clavier, \hyperlink{structObjet}{Objet} $\ast$manette)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_aa78a832057159b053dc97bc50aaa2f6f}{clic\+\_\+souris\+\_\+menu\+\_\+principale} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int curseur, \hyperlink{structObjet}{Objet} newgame, \hyperlink{structObjet}{Objet} loadgame, \hyperlink{structObjet}{Objet} settings, \hyperlink{structObjet}{Objet} in\+\_\+settings, \hyperlink{structObjet}{Objet} $\ast$icon, \hyperlink{structObjet}{Objet} quitter, int $\ast$in, int $\ast$running, int $\ast$boolean\+\_\+icon, int $\ast$quitt, \hyperlink{structObjet}{Objet} exxit)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a5237d05ef4f188f61d5150e4f9ae5114}{clic\+\_\+entrer\+\_\+menu\+\_\+principale} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structObjet}{Objet} in\+\_\+settings, \hyperlink{structObjet}{Objet} icon, Mix\+\_\+\+Chunk $\ast$effect, int curseur, int $\ast$in, int $\ast$running, int $\ast$quitt, \hyperlink{structObjet}{Objet} exxit)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a01fee34ecc94975dc64a8b97eec33629}{mouse\+\_\+motion\+\_\+main\+\_\+menu} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} newgame, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} loadgame, \hyperlink{structObjet}{Objet} settings, \hyperlink{structObjet}{Objet} quitter, int $\ast$quitt)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_aac902a236492a975286b3efad66b5959}{deplacementmenu\+\_\+down} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} newgame, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} loadgame, \hyperlink{structObjet}{Objet} settings, \hyperlink{structObjet}{Objet} quitter, int $\ast$quitt)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a46a43ec1dbba6ba1beda74652823861c}{deplacementmenu\+\_\+up} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} newgame, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} loadgame, \hyperlink{structObjet}{Objet} settings, \hyperlink{structObjet}{Objet} quitter, int $\ast$firsttime, int $\ast$quitt)
+\item 
+int \hyperlink{menu_01_07copie_08_8c_a8c68826cd41ef1308fa714c9a3932368}{deplacementmenu\+\_\+up\+\_\+down} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int $\ast$firsttime, int $\ast$curseur, int $\ast$running, \hyperlink{structObjet}{Objet} newgame, \hyperlink{structObjet}{Objet} loadgame, \hyperlink{structObjet}{Objet} settings, \hyperlink{structObjet}{Objet} quitter, \hyperlink{structObjet}{Objet} $\ast$icon, \hyperlink{structObjet}{Objet} in\+\_\+settings, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$boolean\+\_\+icon, int $\ast$quitt, \hyperlink{structObjet}{Objet} exxit)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a84db6326acd1f67541347734b3a42729}{deplacement\+\_\+\+\_\+sousmenu\+\_\+down} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} in\+\_\+sound25, \hyperlink{structObjet}{Objet} in\+\_\+sound50, \hyperlink{structObjet}{Objet} in\+\_\+sound75, \hyperlink{structObjet}{Objet} in\+\_\+sound100, int position\+\_\+volume, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} credits, \hyperlink{structObjet}{Objet} main\+\_\+menu, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette, int position\+\_\+mode, int position\+\_\+j)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_aa9aa200c37f08af6f68f5310a3b0f83b}{deplacement\+\_\+\+\_\+sousmenu\+\_\+up} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} in\+\_\+sound25, \hyperlink{structObjet}{Objet} in\+\_\+sound50, \hyperlink{structObjet}{Objet} in\+\_\+sound75, \hyperlink{structObjet}{Objet} in\+\_\+sound100, int position\+\_\+volume, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} credits, \hyperlink{structObjet}{Objet} main\+\_\+menu, int $\ast$firsttime, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette, int position\+\_\+mode, int position\+\_\+j)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_aafa1723742aaf10400d1226394e81e31}{update\+\_\+volume\+\_\+surface} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} in\+\_\+sound25, \hyperlink{structObjet}{Objet} in\+\_\+sound50, \hyperlink{structObjet}{Objet} in\+\_\+sound75, \hyperlink{structObjet}{Objet} in\+\_\+sound100, int position\+\_\+volume)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_acbff537c998bef21d8aec4663b32500d}{update\+\_\+mode\+\_\+surface} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette, int position\+\_\+mode)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_aacfe086068def17eb2d10ee72c726062}{update\+\_\+joueur\+\_\+surface} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, int position\+\_\+j)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a0ab41f2cf0da8abca3dafab82382517f}{motion\+\_\+souris\+\_\+sousmenu} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} in\+\_\+sound25, \hyperlink{structObjet}{Objet} in\+\_\+sound50, \hyperlink{structObjet}{Objet} in\+\_\+sound75, \hyperlink{structObjet}{Objet} in\+\_\+sound100, int position\+\_\+volume, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} credits, \hyperlink{structObjet}{Objet} main\+\_\+menu, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette, int position\+\_\+mode, int position\+\_\+j)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a7c3b364505423b6ced8dd8ffdb434c13}{clic\+\_\+souris\+\_\+sousmenu} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structObjet}{Objet} $\ast$icon, S\+D\+L\+\_\+\+Event event, int curseur, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} credits, \hyperlink{structObjet}{Objet} main\+\_\+menu, int $\ast$running2, \hyperlink{structObjet}{Objet} game, int $\ast$boolean\+\_\+icon, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_ae7c50155f13c09ef789c986059ca3fde}{clic\+\_\+entrer\+\_\+sousmenu} (S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structObjet}{Objet} icon, int $\ast$running2, int curseur, \hyperlink{structObjet}{Objet} game)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a4dda56c63756847abc81ad95418588e9}{deplacement\+\_\+droit\+\_\+gauche\+\_\+volume} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} in\+\_\+sound25, \hyperlink{structObjet}{Objet} in\+\_\+sound50, \hyperlink{structObjet}{Objet} in\+\_\+sound75, \hyperlink{structObjet}{Objet} in\+\_\+sound100, int $\ast$position\+\_\+volume)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_ad913190cb846bda4a0ce88df8871f28b}{deplacement\+\_\+droit\+\_\+gauche\+\_\+mode} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette, int $\ast$position\+\_\+mode)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_ae9a873bbee32be2ae1f56d823111705c}{deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, int $\ast$position\+\_\+j)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_a91de672717ace765543b691cc51957f9}{deplacement\+\_\+sous\+\_\+menu} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, S\+D\+L\+\_\+\+Event event, int $\ast$running2, \hyperlink{structObjet}{Objet} in\+\_\+settings, \hyperlink{structObjet}{Objet} in\+\_\+sound, \hyperlink{structObjet}{Objet} in\+\_\+sound25, \hyperlink{structObjet}{Objet} in\+\_\+sound50, \hyperlink{structObjet}{Objet} in\+\_\+sound75, \hyperlink{structObjet}{Objet} in\+\_\+sound100, int $\ast$position\+\_\+volume, \hyperlink{structObjet}{Objet} credits, \hyperlink{structObjet}{Objet} main\+\_\+menu, \hyperlink{structObjet}{Objet} $\ast$icon, int $\ast$running, int $\ast$curseur, int $\ast$firsttime, \hyperlink{structObjet}{Objet} game, int $\ast$boolean\+\_\+icon, \hyperlink{structObjet}{Objet} j1, \hyperlink{structObjet}{Objet} j2, \hyperlink{structObjet}{Objet} joueur, \hyperlink{structObjet}{Objet} mode, \hyperlink{structObjet}{Objet} souris, \hyperlink{structObjet}{Objet} clavier, \hyperlink{structObjet}{Objet} manette, int $\ast$position\+\_\+mode, int $\ast$position\+\_\+j)
+\item 
+void \hyperlink{menu_01_07copie_08_8c_af4b216a06daa438e8c9d0a41df4d1cd9}{quitter\+\_\+oui\+\_\+non} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int $\ast$running, int $\ast$running2, int $\ast$running3, \hyperlink{structObjet}{Objet} quitter, \hyperlink{structObjet}{Objet} icon, \hyperlink{structObjet}{Objet} wexit, \hyperlink{structObjet}{Objet} nwexit, int $\ast$test, int $\ast$test\+\_\+s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a5237d05ef4f188f61d5150e4f9ae5114}\label{menu_01_07copie_08_8c_a5237d05ef4f188f61d5150e4f9ae5114}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!clic\+\_\+entrer\+\_\+menu\+\_\+principale@{clic\+\_\+entrer\+\_\+menu\+\_\+principale}}
+\index{clic\+\_\+entrer\+\_\+menu\+\_\+principale@{clic\+\_\+entrer\+\_\+menu\+\_\+principale}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{clic\+\_\+entrer\+\_\+menu\+\_\+principale()}{clic\_entrer\_menu\_principale()}}
+{\footnotesize\ttfamily void clic\+\_\+entrer\+\_\+menu\+\_\+principale (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+settings,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int}]{curseur,  }\item[{int $\ast$}]{in,  }\item[{int $\ast$}]{running,  }\item[{int $\ast$}]{quitt,  }\item[{\hyperlink{structObjet}{Objet}}]{exxit }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a5237d05ef4f188f61d5150e4f9ae5114_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_ae7c50155f13c09ef789c986059ca3fde}\label{menu_01_07copie_08_8c_ae7c50155f13c09ef789c986059ca3fde}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!clic\+\_\+entrer\+\_\+sousmenu@{clic\+\_\+entrer\+\_\+sousmenu}}
+\index{clic\+\_\+entrer\+\_\+sousmenu@{clic\+\_\+entrer\+\_\+sousmenu}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{clic\+\_\+entrer\+\_\+sousmenu()}{clic\_entrer\_sousmenu()}}
+{\footnotesize\ttfamily void clic\+\_\+entrer\+\_\+sousmenu (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{int $\ast$}]{running2,  }\item[{int}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{game }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_ae7c50155f13c09ef789c986059ca3fde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_aa78a832057159b053dc97bc50aaa2f6f}\label{menu_01_07copie_08_8c_aa78a832057159b053dc97bc50aaa2f6f}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!clic\+\_\+souris\+\_\+menu\+\_\+principale@{clic\+\_\+souris\+\_\+menu\+\_\+principale}}
+\index{clic\+\_\+souris\+\_\+menu\+\_\+principale@{clic\+\_\+souris\+\_\+menu\+\_\+principale}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{clic\+\_\+souris\+\_\+menu\+\_\+principale()}{clic\_souris\_menu\_principale()}}
+{\footnotesize\ttfamily void clic\+\_\+souris\+\_\+menu\+\_\+principale (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{int}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{newgame,  }\item[{\hyperlink{structObjet}{Objet}}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet}}]{settings,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+settings,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{quitter,  }\item[{int $\ast$}]{in,  }\item[{int $\ast$}]{running,  }\item[{int $\ast$}]{boolean\+\_\+icon,  }\item[{int $\ast$}]{quitt,  }\item[{\hyperlink{structObjet}{Objet}}]{exxit }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_aa78a832057159b053dc97bc50aaa2f6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a7c3b364505423b6ced8dd8ffdb434c13}\label{menu_01_07copie_08_8c_a7c3b364505423b6ced8dd8ffdb434c13}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!clic\+\_\+souris\+\_\+sousmenu@{clic\+\_\+souris\+\_\+sousmenu}}
+\index{clic\+\_\+souris\+\_\+sousmenu@{clic\+\_\+souris\+\_\+sousmenu}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{clic\+\_\+souris\+\_\+sousmenu()}{clic\_souris\_sousmenu()}}
+{\footnotesize\ttfamily void clic\+\_\+souris\+\_\+sousmenu (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{int}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{credits,  }\item[{\hyperlink{structObjet}{Objet}}]{main\+\_\+menu,  }\item[{int $\ast$}]{running2,  }\item[{\hyperlink{structObjet}{Objet}}]{game,  }\item[{int $\ast$}]{boolean\+\_\+icon,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a7c3b364505423b6ced8dd8ffdb434c13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a84db6326acd1f67541347734b3a42729}\label{menu_01_07copie_08_8c_a84db6326acd1f67541347734b3a42729}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacement\+\_\+\+\_\+sousmenu\+\_\+down@{deplacement\+\_\+\+\_\+sousmenu\+\_\+down}}
+\index{deplacement\+\_\+\+\_\+sousmenu\+\_\+down@{deplacement\+\_\+\+\_\+sousmenu\+\_\+down}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+\+\_\+sousmenu\+\_\+down()}{deplacement\_\_sousmenu\_down()}}
+{\footnotesize\ttfamily void deplacement\+\_\+\+\_\+sousmenu\+\_\+down (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound100,  }\item[{int}]{position\+\_\+volume,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{credits,  }\item[{\hyperlink{structObjet}{Objet}}]{main\+\_\+menu,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette,  }\item[{int}]{position\+\_\+mode,  }\item[{int}]{position\+\_\+j }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a84db6326acd1f67541347734b3a42729_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_aa9aa200c37f08af6f68f5310a3b0f83b}\label{menu_01_07copie_08_8c_aa9aa200c37f08af6f68f5310a3b0f83b}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacement\+\_\+\+\_\+sousmenu\+\_\+up@{deplacement\+\_\+\+\_\+sousmenu\+\_\+up}}
+\index{deplacement\+\_\+\+\_\+sousmenu\+\_\+up@{deplacement\+\_\+\+\_\+sousmenu\+\_\+up}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+\+\_\+sousmenu\+\_\+up()}{deplacement\_\_sousmenu\_up()}}
+{\footnotesize\ttfamily void deplacement\+\_\+\+\_\+sousmenu\+\_\+up (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound100,  }\item[{int}]{position\+\_\+volume,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{credits,  }\item[{\hyperlink{structObjet}{Objet}}]{main\+\_\+menu,  }\item[{int $\ast$}]{firsttime,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette,  }\item[{int}]{position\+\_\+mode,  }\item[{int}]{position\+\_\+j }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_aa9aa200c37f08af6f68f5310a3b0f83b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_aa9aa200c37f08af6f68f5310a3b0f83b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_ae9a873bbee32be2ae1f56d823111705c}\label{menu_01_07copie_08_8c_ae9a873bbee32be2ae1f56d823111705c}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur@{deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur}}
+\index{deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur@{deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur()}{deplacement\_droit\_gauche\_joueur()}}
+{\footnotesize\ttfamily void deplacement\+\_\+droit\+\_\+gauche\+\_\+joueur (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{int $\ast$}]{position\+\_\+j }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_ae9a873bbee32be2ae1f56d823111705c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_ad913190cb846bda4a0ce88df8871f28b}\label{menu_01_07copie_08_8c_ad913190cb846bda4a0ce88df8871f28b}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacement\+\_\+droit\+\_\+gauche\+\_\+mode@{deplacement\+\_\+droit\+\_\+gauche\+\_\+mode}}
+\index{deplacement\+\_\+droit\+\_\+gauche\+\_\+mode@{deplacement\+\_\+droit\+\_\+gauche\+\_\+mode}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+droit\+\_\+gauche\+\_\+mode()}{deplacement\_droit\_gauche\_mode()}}
+{\footnotesize\ttfamily void deplacement\+\_\+droit\+\_\+gauche\+\_\+mode (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette,  }\item[{int $\ast$}]{position\+\_\+mode }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_ad913190cb846bda4a0ce88df8871f28b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a4dda56c63756847abc81ad95418588e9}\label{menu_01_07copie_08_8c_a4dda56c63756847abc81ad95418588e9}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacement\+\_\+droit\+\_\+gauche\+\_\+volume@{deplacement\+\_\+droit\+\_\+gauche\+\_\+volume}}
+\index{deplacement\+\_\+droit\+\_\+gauche\+\_\+volume@{deplacement\+\_\+droit\+\_\+gauche\+\_\+volume}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+droit\+\_\+gauche\+\_\+volume()}{deplacement\_droit\_gauche\_volume()}}
+{\footnotesize\ttfamily void deplacement\+\_\+droit\+\_\+gauche\+\_\+volume (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound100,  }\item[{int $\ast$}]{position\+\_\+volume }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a4dda56c63756847abc81ad95418588e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a91de672717ace765543b691cc51957f9}\label{menu_01_07copie_08_8c_a91de672717ace765543b691cc51957f9}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacement\+\_\+sous\+\_\+menu@{deplacement\+\_\+sous\+\_\+menu}}
+\index{deplacement\+\_\+sous\+\_\+menu@{deplacement\+\_\+sous\+\_\+menu}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacement\+\_\+sous\+\_\+menu()}{deplacement\_sous\_menu()}}
+{\footnotesize\ttfamily void deplacement\+\_\+sous\+\_\+menu (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{int $\ast$}]{running2,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+settings,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound100,  }\item[{int $\ast$}]{position\+\_\+volume,  }\item[{\hyperlink{structObjet}{Objet}}]{credits,  }\item[{\hyperlink{structObjet}{Objet}}]{main\+\_\+menu,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon,  }\item[{int $\ast$}]{running,  }\item[{int $\ast$}]{curseur,  }\item[{int $\ast$}]{firsttime,  }\item[{\hyperlink{structObjet}{Objet}}]{game,  }\item[{int $\ast$}]{boolean\+\_\+icon,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette,  }\item[{int $\ast$}]{position\+\_\+mode,  }\item[{int $\ast$}]{position\+\_\+j }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a91de672717ace765543b691cc51957f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{menu_01_07copie_08_8c_a91de672717ace765543b691cc51957f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_aac902a236492a975286b3efad66b5959}\label{menu_01_07copie_08_8c_aac902a236492a975286b3efad66b5959}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacementmenu\+\_\+down@{deplacementmenu\+\_\+down}}
+\index{deplacementmenu\+\_\+down@{deplacementmenu\+\_\+down}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacementmenu\+\_\+down()}{deplacementmenu\_down()}}
+{\footnotesize\ttfamily void deplacementmenu\+\_\+down (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{newgame,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet}}]{settings,  }\item[{\hyperlink{structObjet}{Objet}}]{quitter,  }\item[{int $\ast$}]{quitt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_aac902a236492a975286b3efad66b5959_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a46a43ec1dbba6ba1beda74652823861c}\label{menu_01_07copie_08_8c_a46a43ec1dbba6ba1beda74652823861c}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacementmenu\+\_\+up@{deplacementmenu\+\_\+up}}
+\index{deplacementmenu\+\_\+up@{deplacementmenu\+\_\+up}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacementmenu\+\_\+up()}{deplacementmenu\_up()}}
+{\footnotesize\ttfamily void deplacementmenu\+\_\+up (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{newgame,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet}}]{settings,  }\item[{\hyperlink{structObjet}{Objet}}]{quitter,  }\item[{int $\ast$}]{firsttime,  }\item[{int $\ast$}]{quitt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{menu_01_07copie_08_8c_a46a43ec1dbba6ba1beda74652823861c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a46a43ec1dbba6ba1beda74652823861c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a8c68826cd41ef1308fa714c9a3932368}\label{menu_01_07copie_08_8c_a8c68826cd41ef1308fa714c9a3932368}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!deplacementmenu\+\_\+up\+\_\+down@{deplacementmenu\+\_\+up\+\_\+down}}
+\index{deplacementmenu\+\_\+up\+\_\+down@{deplacementmenu\+\_\+up\+\_\+down}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{deplacementmenu\+\_\+up\+\_\+down()}{deplacementmenu\_up\_down()}}
+{\footnotesize\ttfamily int deplacementmenu\+\_\+up\+\_\+down (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{int $\ast$}]{firsttime,  }\item[{int $\ast$}]{curseur,  }\item[{int $\ast$}]{running,  }\item[{\hyperlink{structObjet}{Objet}}]{newgame,  }\item[{\hyperlink{structObjet}{Objet}}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet}}]{settings,  }\item[{\hyperlink{structObjet}{Objet}}]{quitter,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+settings,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{boolean\+\_\+icon,  }\item[{int $\ast$}]{quitt,  }\item[{\hyperlink{structObjet}{Objet}}]{exxit }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a8c68826cd41ef1308fa714c9a3932368_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{menu_01_07copie_08_8c_a8c68826cd41ef1308fa714c9a3932368_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a6ed81a9b60090a7e012e1c6a57bbbe57}\label{menu_01_07copie_08_8c_a6ed81a9b60090a7e012e1c6a57bbbe57}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily void initialiser (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{newgame,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{settings,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound100,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+settings,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{credits,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{main\+\_\+menu,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{quitter,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{wexit,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{nwexit,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{exxit,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{game,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{j1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{j2,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{joueur,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{mode,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{souris,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{clavier,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{manette }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{menu_01_07copie_08_8c_a6ed81a9b60090a7e012e1c6a57bbbe57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_aee999999e7b274237009a249b0227564}\label{menu_01_07copie_08_8c_aee999999e7b274237009a249b0227564}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!liberate@{liberate}}
+\index{liberate@{liberate}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{liberate()}{liberate()}}
+{\footnotesize\ttfamily void liberate (\begin{DoxyParamCaption}\item[{\hyperlink{structObjet}{Objet} $\ast$}]{newgame,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{settings,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+sound100,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{in\+\_\+settings,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{credits,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{main\+\_\+menu,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{quitter,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{wexit,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{nwexit,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{exxit,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{game,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{j1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{j2,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{joueur,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{mode,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{souris,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{clavier,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{manette }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{menu_01_07copie_08_8c_aee999999e7b274237009a249b0227564_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a0ab41f2cf0da8abca3dafab82382517f}\label{menu_01_07copie_08_8c_a0ab41f2cf0da8abca3dafab82382517f}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!motion\+\_\+souris\+\_\+sousmenu@{motion\+\_\+souris\+\_\+sousmenu}}
+\index{motion\+\_\+souris\+\_\+sousmenu@{motion\+\_\+souris\+\_\+sousmenu}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{motion\+\_\+souris\+\_\+sousmenu()}{motion\_souris\_sousmenu()}}
+{\footnotesize\ttfamily void motion\+\_\+souris\+\_\+sousmenu (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound100,  }\item[{int}]{position\+\_\+volume,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{credits,  }\item[{\hyperlink{structObjet}{Objet}}]{main\+\_\+menu,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette,  }\item[{int}]{position\+\_\+mode,  }\item[{int}]{position\+\_\+j }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a0ab41f2cf0da8abca3dafab82382517f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a01fee34ecc94975dc64a8b97eec33629}\label{menu_01_07copie_08_8c_a01fee34ecc94975dc64a8b97eec33629}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!mouse\+\_\+motion\+\_\+main\+\_\+menu@{mouse\+\_\+motion\+\_\+main\+\_\+menu}}
+\index{mouse\+\_\+motion\+\_\+main\+\_\+menu@{mouse\+\_\+motion\+\_\+main\+\_\+menu}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+motion\+\_\+main\+\_\+menu()}{mouse\_motion\_main\_menu()}}
+{\footnotesize\ttfamily void mouse\+\_\+motion\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{int $\ast$}]{curseur,  }\item[{\hyperlink{structObjet}{Objet}}]{newgame,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{loadgame,  }\item[{\hyperlink{structObjet}{Objet}}]{settings,  }\item[{\hyperlink{structObjet}{Objet}}]{quitter,  }\item[{int $\ast$}]{quitt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a01fee34ecc94975dc64a8b97eec33629_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_af4b216a06daa438e8c9d0a41df4d1cd9}\label{menu_01_07copie_08_8c_af4b216a06daa438e8c9d0a41df4d1cd9}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!quitter\+\_\+oui\+\_\+non@{quitter\+\_\+oui\+\_\+non}}
+\index{quitter\+\_\+oui\+\_\+non@{quitter\+\_\+oui\+\_\+non}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{quitter\+\_\+oui\+\_\+non()}{quitter\_oui\_non()}}
+{\footnotesize\ttfamily void quitter\+\_\+oui\+\_\+non (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{int $\ast$}]{running,  }\item[{int $\ast$}]{running2,  }\item[{int $\ast$}]{running3,  }\item[{\hyperlink{structObjet}{Objet}}]{quitter,  }\item[{\hyperlink{structObjet}{Objet}}]{icon,  }\item[{\hyperlink{structObjet}{Objet}}]{wexit,  }\item[{\hyperlink{structObjet}{Objet}}]{nwexit,  }\item[{int $\ast$}]{test,  }\item[{int $\ast$}]{test\+\_\+s }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{menu_01_07copie_08_8c_af4b216a06daa438e8c9d0a41df4d1cd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a74ff2595edb8cb817eeab72f1662171f}\label{menu_01_07copie_08_8c_a74ff2595edb8cb817eeab72f1662171f}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!setup@{setup}}
+\index{setup@{setup}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{game,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{icon }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{menu_01_07copie_08_8c_a74ff2595edb8cb817eeab72f1662171f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_a989655a408019727ed1e4f69cc6cb4e7}\label{menu_01_07copie_08_8c_a989655a408019727ed1e4f69cc6cb4e7}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!update@{update}}
+\index{update@{update}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{surface1,  }\item[{\hyperlink{structObjet}{Objet} $\ast$}]{surface2 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_a989655a408019727ed1e4f69cc6cb4e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_aacfe086068def17eb2d10ee72c726062}\label{menu_01_07copie_08_8c_aacfe086068def17eb2d10ee72c726062}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!update\+\_\+joueur\+\_\+surface@{update\+\_\+joueur\+\_\+surface}}
+\index{update\+\_\+joueur\+\_\+surface@{update\+\_\+joueur\+\_\+surface}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+joueur\+\_\+surface()}{update\_joueur\_surface()}}
+{\footnotesize\ttfamily void update\+\_\+joueur\+\_\+surface (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{\hyperlink{structObjet}{Objet}}]{joueur,  }\item[{\hyperlink{structObjet}{Objet}}]{j1,  }\item[{\hyperlink{structObjet}{Objet}}]{j2,  }\item[{int}]{position\+\_\+j }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_aacfe086068def17eb2d10ee72c726062_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_acbff537c998bef21d8aec4663b32500d}\label{menu_01_07copie_08_8c_acbff537c998bef21d8aec4663b32500d}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!update\+\_\+mode\+\_\+surface@{update\+\_\+mode\+\_\+surface}}
+\index{update\+\_\+mode\+\_\+surface@{update\+\_\+mode\+\_\+surface}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+mode\+\_\+surface()}{update\_mode\_surface()}}
+{\footnotesize\ttfamily void update\+\_\+mode\+\_\+surface (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{\hyperlink{structObjet}{Objet}}]{mode,  }\item[{\hyperlink{structObjet}{Objet}}]{souris,  }\item[{\hyperlink{structObjet}{Objet}}]{clavier,  }\item[{\hyperlink{structObjet}{Objet}}]{manette,  }\item[{int}]{position\+\_\+mode }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_acbff537c998bef21d8aec4663b32500d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_aafa1723742aaf10400d1226394e81e31}\label{menu_01_07copie_08_8c_aafa1723742aaf10400d1226394e81e31}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!update\+\_\+volume\+\_\+surface@{update\+\_\+volume\+\_\+surface}}
+\index{update\+\_\+volume\+\_\+surface@{update\+\_\+volume\+\_\+surface}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+volume\+\_\+surface()}{update\_volume\_surface()}}
+{\footnotesize\ttfamily void update\+\_\+volume\+\_\+surface (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{Mix\+\_\+\+Chunk $\ast$}]{effect,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound25,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound50,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound75,  }\item[{\hyperlink{structObjet}{Objet}}]{in\+\_\+sound100,  }\item[{int}]{position\+\_\+volume }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_aafa1723742aaf10400d1226394e81e31_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{menu_01_07copie_08_8c_abe842397d22ae8a423936cc41bba4845}\label{menu_01_07copie_08_8c_abe842397d22ae8a423936cc41bba4845}} 
+\index{menu (copie).\+c@{menu (copie).\+c}!verif\+\_\+motion\+\_\+surface@{verif\+\_\+motion\+\_\+surface}}
+\index{verif\+\_\+motion\+\_\+surface@{verif\+\_\+motion\+\_\+surface}!menu (copie).\+c@{menu (copie).\+c}}
+\subsubsection{\texorpdfstring{verif\+\_\+motion\+\_\+surface()}{verif\_motion\_surface()}}
+{\footnotesize\ttfamily int verif\+\_\+motion\+\_\+surface (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{\hyperlink{structObjet}{Objet}}]{surface }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_01_07copie_08_8c_abe842397d22ae8a423936cc41bba4845_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,6 @@
+<map id="ennemi.h" name="ennemi.h">
+<area shape="rect" id="node2" href="$ennemi_8c.html" title="ennemi.c" alt="" coords="5,80,80,107"/>
+<area shape="rect" id="node3" href="$jeu_8h.html" title="jeu.h" alt="" coords="104,80,155,107"/>
+<area shape="rect" id="node4" href="$jeu_8c.html" title="jeu.c" alt="" coords="64,155,115,181"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="main.c" alt="" coords="139,155,200,181"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="defs.h" name="defs.h">
+<area shape="rect" id="node2" href="$background_8h.html" title="background.h" alt="" coords="155,80,255,107"/>
+<area shape="rect" id="node4" href="$ennemi_8h.html" title="ennemi.h" alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node6" href="$jeu_8h.html" title="jeu.h" alt="" coords="256,229,307,256"/>
+<area shape="rect" id="node8" href="$main_8c.html" title="main.c" alt="" coords="363,304,424,331"/>
+<area shape="rect" id="node9" href="$hero_8h.html" title="hero.h" alt="" coords="331,155,389,181"/>
+<area shape="rect" id="node3" href="$background_8c.html" title="background.c" alt="" coords="105,155,205,181"/>
+<area shape="rect" id="node5" href="$ennemi_8c.html" title="ennemi.c" alt="" coords="5,229,80,256"/>
+<area shape="rect" id="node7" href="$jeu_8c.html" title="jeu.c" alt="" coords="256,304,307,331"/>
+<area shape="rect" id="node10" href="$hero_8c.html" title="hero.c" alt="" coords="331,229,389,256"/>
+</map>

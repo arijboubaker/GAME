@@ -1,0 +1,9 @@
+<map id="verif_motion_surface" name="verif_motion_surface">
+<area shape="rect" id="node2" href="$menu_8c.html#aa78a832057159b053dc97bc50aaa2f6f" title="clic_souris_menu_principale" alt="" coords="196,5,381,32"/>
+<area shape="rect" id="node4" href="$menu_8c.html#a01fee34ecc94975dc64a8b97eec33629" title="mouse_motion_main_menu" alt="" coords="198,56,379,83"/>
+<area shape="rect" id="node5" href="$menu_8c.html#a0ab41f2cf0da8abca3dafab82382517f" title="motion_souris_sousmenu" alt="" coords="203,107,374,133"/>
+<area shape="rect" id="node7" href="$menu_8c.html#a7c3b364505423b6ced8dd8ffdb434c13" title="clic_souris_sousmenu" alt="" coords="213,157,364,184"/>
+<area shape="rect" id="node8" href="$menu_8c.html#af4b216a06daa438e8c9d0a41df4d1cd9" title="quitter_oui_non" alt="" coords="233,208,344,235"/>
+<area shape="rect" id="node3" href="$menu_8h.html#a26c3bc20b4d8698bc446325652be4fd1" title="deplacementmenu_up_down" alt="" coords="429,44,616,71"/>
+<area shape="rect" id="node6" href="$menu_8h.html#a1bc9078394ad9f78ce5a36a6ffcf2f21" title="deplacement_sous_menu" alt="" coords="437,120,608,147"/>
+</map>

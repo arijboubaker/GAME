@@ -1,0 +1,21 @@
+<map id="update" name="update">
+<area shape="rect" id="node2" href="$menu_8c.html#aa78a832057159b053dc97bc50aaa2f6f" title="clic_souris_menu_principale" alt="" coords="115,5,300,32"/>
+<area shape="rect" id="node4" href="$menu_8c.html#a5237d05ef4f188f61d5150e4f9ae5114" title="clic_entrer_menu_principale" alt="" coords="116,56,299,83"/>
+<area shape="rect" id="node5" href="$menu_8c.html#a01fee34ecc94975dc64a8b97eec33629" title="mouse_motion_main_menu" alt="" coords="117,107,298,133"/>
+<area shape="rect" id="node6" href="$menu_8c.html#aac902a236492a975286b3efad66b5959" title="deplacementmenu_down" alt="" coords="124,157,291,184"/>
+<area shape="rect" id="node7" href="$menu_8h.html#aa22c513c93d701f2e2f849693357333e" title="deplacementmenu_up" alt="" coords="133,208,282,235"/>
+<area shape="rect" id="node8" href="$menu_8c.html#a84db6326acd1f67541347734b3a42729" title="deplacement__sousmenu_down" alt="" coords="352,477,560,504"/>
+<area shape="rect" id="node9" href="$menu_8h.html#a1bc9078394ad9f78ce5a36a6ffcf2f21" title="deplacement_sous_menu" alt="" coords="612,477,783,504"/>
+<area shape="rect" id="node10" href="$menu_8h.html#a9e2f67419ed3a0025513ff0f1153b4f0" title="deplacement__sousmenu_up" alt="" coords="361,595,551,621"/>
+<area shape="rect" id="node11" href="$menu_8c.html#aafa1723742aaf10400d1226394e81e31" title="update_volume_surface" alt="" coords="127,512,287,539"/>
+<area shape="rect" id="node12" href="$menu_8c.html#a0ab41f2cf0da8abca3dafab82382517f" title="motion_souris_sousmenu" alt="" coords="371,645,541,672"/>
+<area shape="rect" id="node14" href="$menu_8c.html#acbff537c998bef21d8aec4663b32500d" title="update_mode_surface" alt="" coords="132,613,283,640"/>
+<area shape="rect" id="node16" href="$menu_8c.html#aacfe086068def17eb2d10ee72c726062" title="update_joueur_surface" alt="" coords="131,461,284,488"/>
+<area shape="rect" id="node18" href="$menu_8c.html#a7c3b364505423b6ced8dd8ffdb434c13" title="clic_souris_sousmenu" alt="" coords="381,259,531,285"/>
+<area shape="rect" id="node19" href="$menu_8c.html#ae7c50155f13c09ef789c986059ca3fde" title="clic_entrer_sousmenu" alt="" coords="381,309,531,336"/>
+<area shape="rect" id="node20" href="$menu_8c.html#af4b216a06daa438e8c9d0a41df4d1cd9" title="quitter_oui_non" alt="" coords="152,715,263,741"/>
+<area shape="rect" id="node3" href="$menu_8h.html#a26c3bc20b4d8698bc446325652be4fd1" title="deplacementmenu_up_down" alt="" coords="363,107,549,133"/>
+<area shape="rect" id="node13" href="$menu_8c.html#a4dda56c63756847abc81ad95418588e9" title="deplacement_droit_gauche\l_volume" alt="" coords="367,529,545,570"/>
+<area shape="rect" id="node15" href="$menu_8c.html#ad913190cb846bda4a0ce88df8871f28b" title="deplacement_droit_gauche_mode" alt="" coords="348,696,564,723"/>
+<area shape="rect" id="node17" href="$menu_8c.html#ae9a873bbee32be2ae1f56d823111705c" title="deplacement_droit_gauche\l_joueur" alt="" coords="367,411,545,453"/>
+</map>

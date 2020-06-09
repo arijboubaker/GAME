@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$animennemi_8c.html#a449db8c266f1c795e8de1e9e9802f90b" title="initialiserennemi" alt="" coords="111,5,226,32"/>
+<area shape="rect" id="node3" href="$structbackground.html#a6511affeeaa8a9abf07ac9b709075c8b" title="background::background" alt="" coords="281,107,445,133"/>
+<area shape="rect" id="node4" href="$animennemi_8c.html#a5b88fedc1de2481522fa32569e5b7393" title="mvm_alea_enemi" alt="" coords="107,107,231,133"/>
+<area shape="rect" id="node5" href="$animennemi_8c.html#aeaee7609b550df071dc748028caa3f97" title="affichage_ennemi" alt="" coords="107,157,231,184"/>
+<area shape="rect" id="node6" href="$animennemi_8c.html#ad429715f94be9c05e0f873efd01f62ff" title="freesurfaceennemi" alt="" coords="104,208,233,235"/>
+</map>
