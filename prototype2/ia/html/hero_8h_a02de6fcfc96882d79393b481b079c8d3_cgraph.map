@@ -1,0 +1,4 @@
+<map id="init_hero" name="init_hero">
+<area shape="rect" id="node2" href="$hero_8c.html#ae11170e307c1823f644a0ed6c4fcb3d3" title="loadHeroImages" alt="" coords="127,5,244,32"/>
+<area shape="rect" id="node3" href="$hero_8c.html#afb70c3dc1353ca52fb962b1b5e341257" title="initHeroAttributes" alt="" coords="124,56,247,83"/>
+</map>

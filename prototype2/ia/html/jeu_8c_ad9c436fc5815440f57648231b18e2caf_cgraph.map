@@ -1,0 +1,32 @@
+<map id="jouer" name="jouer">
+<area shape="rect" id="node2" href="$background_8c.html#a64f4f98a94abc44908b52e952c05664d" title="init_background" alt="" coords="116,56,229,83"/>
+<area shape="rect" id="node5" href="$hero_8c.html#a02de6fcfc96882d79393b481b079c8d3" title="init_hero" alt="" coords="137,157,208,184"/>
+<area shape="rect" id="node8" href="$ennemi_8c.html#afde13914c19c18b1e242aa74218633e1" title="init_ennemi" alt="" coords="129,259,217,285"/>
+<area shape="rect" id="node11" href="$text_8c.html#ac269a46f79e51608ef78cd4cb1c45ce2" title="init_text" alt="" coords="139,360,207,387"/>
+<area shape="rect" id="node14" href="$jeu_8c.html#a0042a71e38e225e5874875d59387dfbe" title="get_input" alt="" coords="135,411,210,437"/>
+<area shape="rect" id="node15" href="$hero_8c.html#a8d9990c46b5900c912fc96d4b091999f" title="update_hero" alt="" coords="126,461,219,488"/>
+<area shape="rect" id="node19" href="$ennemi_8c.html#aeb35ec28dc6bb5926a0f122f46abb838" title="update_ennemi" alt="" coords="117,512,228,539"/>
+<area shape="rect" id="node23" href="$text_8c.html#a2a40daca85de6bc00538e32c91d4220e" title="update_txt" alt="" coords="131,563,214,589"/>
+<area shape="rect" id="node24" href="$background_8c.html#a80a77e36e17fc60ff6671f447363a05e" title="display_background" alt="" coords="104,613,241,640"/>
+<area shape="rect" id="node25" href="$text_8c.html#acdafc8b8de5b1a0309c13c3fe4cf9a8a" title="displayText" alt="" coords="128,664,217,691"/>
+<area shape="rect" id="node26" href="$ennemi_8c.html#a4a6d168704004408735192346353ec89" title="display_ennemi" alt="" coords="117,715,229,741"/>
+<area shape="rect" id="node27" href="$hero_8c.html#a5ed7845fc23601c05b518e32b72edc45" title="display_hero" alt="" coords="125,765,220,792"/>
+<area shape="rect" id="node28" href="$text_8c.html#aa642dcc238a888eacbb2c80a3f604ee1" title="freeText" alt="" coords="137,816,208,843"/>
+<area shape="rect" id="node29" href="$hero_8c.html#a72d8438912e0fab3e100d52b2560845e" title="freeHero" alt="" coords="137,867,209,893"/>
+<area shape="rect" id="node30" href="$ennemi_8c.html#af0b8bd6f8504f557621c6d0c1b84bcdc" title="freeEnnemi" alt="" coords="129,917,217,944"/>
+<area shape="rect" id="node31" href="$background_8c.html#ab5e1830996c2c32cc4860e2321a22b76" title="freeBackground" alt="" coords="116,968,229,995"/>
+<area shape="rect" id="node3" href="$background_8c.html#aa4bc88437f80ec463c6a370db7bc7adb" title="loadBackground" alt="" coords="312,5,427,32"/>
+<area shape="rect" id="node4" href="$background_8c.html#a0a466aed05d60587c8430110812f68be" title="initBackgoundAttributes" alt="" coords="289,56,449,83"/>
+<area shape="rect" id="node6" href="$hero_8c.html#ae11170e307c1823f644a0ed6c4fcb3d3" title="loadHeroImages" alt="" coords="311,107,428,133"/>
+<area shape="rect" id="node7" href="$hero_8c.html#afb70c3dc1353ca52fb962b1b5e341257" title="initHeroAttributes" alt="" coords="308,157,431,184"/>
+<area shape="rect" id="node9" href="$ennemi_8c.html#aab02c87cdc44eb526fba24e52342a999" title="loadEnnemiImages" alt="" coords="303,208,436,235"/>
+<area shape="rect" id="node10" href="$ennemi_8c.html#a33539862b507334c5b122af3ca87585c" title="initEnnemiAttributes" alt="" coords="300,259,439,285"/>
+<area shape="rect" id="node12" href="$text_8c.html#aaeca0de4db7b2b3adab7953e103ab254" title="loadFont" alt="" coords="333,309,405,336"/>
+<area shape="rect" id="node13" href="$text_8c.html#a0ea79d8f0ab786ff1512f02154b8615f" title="initTextAttributes" alt="" coords="309,360,430,387"/>
+<area shape="rect" id="node16" href="$hero_8c.html#a19b2ddbd3df2e9dd40de2dd5b5f33d37" title="animateHero" alt="" coords="321,411,417,437"/>
+<area shape="rect" id="node17" href="$hero_8c.html#a949611862d28f49bddbb4db1bf587ebe" title="moveHero" alt="" coords="328,461,411,488"/>
+<area shape="rect" id="node18" href="$hero_8c.html#a219651f087e4676983a70d84e7f79f13" title="updateHeroScore" alt="" coords="308,512,431,539"/>
+<area shape="rect" id="node20" href="$ennemi_8c.html#aba87f4048a9174ed4da1bfdacdb48e7a" title="animateEnnemi" alt="" coords="313,563,425,589"/>
+<area shape="rect" id="node21" href="$ennemi_8c.html#a6e1dcb4906c388746dde0f9319478444" title="moveEnnemi" alt="" coords="320,613,419,640"/>
+<area shape="rect" id="node22" href="$ennemi_8c.html#a94a78c5e97a5507ab163f99d68678965" title="updateEnnemiState" alt="" coords="301,664,437,691"/>
+</map>

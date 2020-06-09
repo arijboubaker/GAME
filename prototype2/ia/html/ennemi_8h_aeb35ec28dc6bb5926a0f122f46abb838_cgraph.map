@@ -1,0 +1,5 @@
+<map id="update_ennemi" name="update_ennemi">
+<area shape="rect" id="node2" href="$ennemi_8c.html#aba87f4048a9174ed4da1bfdacdb48e7a" title="animateEnnemi" alt="" coords="176,5,288,32"/>
+<area shape="rect" id="node3" href="$ennemi_8c.html#a6e1dcb4906c388746dde0f9319478444" title="moveEnnemi" alt="" coords="183,56,281,83"/>
+<area shape="rect" id="node4" href="$ennemi_8c.html#a94a78c5e97a5507ab163f99d68678965" title="updateEnnemiState" alt="" coords="164,107,300,133"/>
+</map>

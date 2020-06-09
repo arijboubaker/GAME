@@ -1,0 +1,5 @@
+<map id="update_hero" name="update_hero">
+<area shape="rect" id="node2" href="$hero_8c.html#a19b2ddbd3df2e9dd40de2dd5b5f33d37" title="animateHero" alt="" coords="160,5,256,32"/>
+<area shape="rect" id="node3" href="$hero_8c.html#a949611862d28f49bddbb4db1bf587ebe" title="moveHero" alt="" coords="167,56,249,83"/>
+<area shape="rect" id="node4" href="$hero_8c.html#a219651f087e4676983a70d84e7f79f13" title="updateHeroScore" alt="" coords="147,107,269,133"/>
+</map>

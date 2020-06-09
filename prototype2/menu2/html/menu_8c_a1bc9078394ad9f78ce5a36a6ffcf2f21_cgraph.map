@@ -1,0 +1,19 @@
+<map id="deplacement_sous_menu" name="deplacement_sous_menu">
+<area shape="rect" id="node2" href="$menu_8c.html#a7c3b364505423b6ced8dd8ffdb434c13" title="clic_souris_sousmenu" alt="" coords="257,296,407,323"/>
+<area shape="rect" id="node5" href="$menu_8c.html#a0ab41f2cf0da8abca3dafab82382517f" title="motion_souris_sousmenu" alt="" coords="247,179,417,205"/>
+<area shape="rect" id="node9" href="$menu_8c.html#a989655a408019727ed1e4f69cc6cb4e7" title="update" alt="" coords="537,499,599,525"/>
+<area shape="rect" id="node10" href="$menu_8c.html#ae7c50155f13c09ef789c986059ca3fde" title="clic_entrer_sousmenu" alt="" coords="257,536,407,563"/>
+<area shape="rect" id="node11" href="$menu_8c.html#a84db6326acd1f67541347734b3a42729" title="deplacement__sousmenu_down" alt="" coords="228,77,436,104"/>
+<area shape="rect" id="node12" href="$menu_8c.html#a9e2f67419ed3a0025513ff0f1153b4f0" title="deplacement__sousmenu_up" alt="" coords="237,397,427,424"/>
+<area shape="rect" id="node16" href="$menu_8c.html#a4dda56c63756847abc81ad95418588e9" title="deplacement_droit_gauche\l_volume" alt="" coords="243,11,421,53"/>
+<area shape="rect" id="node17" href="$menu_8c.html#ad913190cb846bda4a0ce88df8871f28b" title="deplacement_droit_gauche_mode" alt="" coords="224,128,440,155"/>
+<area shape="rect" id="node18" href="$menu_8c.html#ae9a873bbee32be2ae1f56d823111705c" title="deplacement_droit_gauche\l_joueur" alt="" coords="243,230,421,271"/>
+<area shape="rect" id="node3" href="$menu_01_07copie_08_8c.html#abe842397d22ae8a423936cc41bba4845" title="verif_motion_surface" alt="" coords="497,245,639,272"/>
+<area shape="rect" id="node4" href="$menu_01_07copie_08_8c.html#a989655a408019727ed1e4f69cc6cb4e7" title="update" alt="" coords="696,347,757,373"/>
+<area shape="rect" id="node6" href="$menu_01_07copie_08_8c.html#aafa1723742aaf10400d1226394e81e31" title="update_volume_surface" alt="" coords="488,43,648,69"/>
+<area shape="rect" id="node7" href="$menu_01_07copie_08_8c.html#acbff537c998bef21d8aec4663b32500d" title="update_mode_surface" alt="" coords="493,93,643,120"/>
+<area shape="rect" id="node8" href="$menu_01_07copie_08_8c.html#aacfe086068def17eb2d10ee72c726062" title="update_joueur_surface" alt="" coords="491,195,645,221"/>
+<area shape="rect" id="node13" href="$menu_8c.html#aafa1723742aaf10400d1226394e81e31" title="update_volume_surface" alt="" coords="488,347,648,373"/>
+<area shape="rect" id="node14" href="$menu_8c.html#acbff537c998bef21d8aec4663b32500d" title="update_mode_surface" alt="" coords="493,397,643,424"/>
+<area shape="rect" id="node15" href="$menu_8c.html#aacfe086068def17eb2d10ee72c726062" title="update_joueur_surface" alt="" coords="491,448,645,475"/>
+</map>

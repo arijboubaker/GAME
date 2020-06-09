@@ -1,0 +1,132 @@
+\hypertarget{animennemi_8h}{}\section{animennemi.\+h File Reference}
+\label{animennemi_8h}\index{animennemi.\+h@{animennemi.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Include dependency graph for animennemi.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animennemi_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{animennemi_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbackground}{background}
+\item 
+struct \hyperlink{structennemi}{ennemi}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structbackground}{background} \hyperlink{animennemi_8h_ac7ec97684ccd0aaa88e134ebcc2478bb}{background}
+\item 
+typedef struct \hyperlink{structennemi}{ennemi} \hyperlink{animennemi_8h_ab7eb9415b369de28d9a91182c35b6fab}{ennemi}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{animennemi_8h_a449db8c266f1c795e8de1e9e9802f90b}{initialiserennemi} (\hyperlink{structennemi}{ennemi} $\ast$e)
+\item 
+void \hyperlink{animennemi_8h_ad429715f94be9c05e0f873efd01f62ff}{freesurfaceennemi} (\hyperlink{structennemi}{ennemi} $\ast$e)
+\item 
+void \hyperlink{animennemi_8h_aeaee7609b550df071dc748028caa3f97}{affichage\+\_\+ennemi} (\hyperlink{structennemi}{ennemi} e, S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structbackground}{background} b)
+\item 
+void \hyperlink{animennemi_8h_a5b88fedc1de2481522fa32569e5b7393}{mvm\+\_\+alea\+\_\+enemi} (\hyperlink{structennemi}{ennemi} $\ast$e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{animennemi_8h_ac7ec97684ccd0aaa88e134ebcc2478bb}\label{animennemi_8h_ac7ec97684ccd0aaa88e134ebcc2478bb}} 
+\index{animennemi.\+h@{animennemi.\+h}!background@{background}}
+\index{background@{background}!animennemi.\+h@{animennemi.\+h}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structbackground}{background} \hyperlink{structbackground}{background}}
+
+\mbox{\Hypertarget{animennemi_8h_ab7eb9415b369de28d9a91182c35b6fab}\label{animennemi_8h_ab7eb9415b369de28d9a91182c35b6fab}} 
+\index{animennemi.\+h@{animennemi.\+h}!ennemi@{ennemi}}
+\index{ennemi@{ennemi}!animennemi.\+h@{animennemi.\+h}}
+\subsubsection{\texorpdfstring{ennemi}{ennemi}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structennemi}{ennemi} \hyperlink{structennemi}{ennemi}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{animennemi_8h_aeaee7609b550df071dc748028caa3f97}\label{animennemi_8h_aeaee7609b550df071dc748028caa3f97}} 
+\index{animennemi.\+h@{animennemi.\+h}!affichage\+\_\+ennemi@{affichage\+\_\+ennemi}}
+\index{affichage\+\_\+ennemi@{affichage\+\_\+ennemi}!animennemi.\+h@{animennemi.\+h}}
+\subsubsection{\texorpdfstring{affichage\+\_\+ennemi()}{affichage\_ennemi()}}
+{\footnotesize\ttfamily void affichage\+\_\+ennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structennemi}{ennemi}}]{e,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen,  }\item[{\hyperlink{structbackground}{background}}]{b }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{animennemi_8h_aeaee7609b550df071dc748028caa3f97_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{animennemi_8h_aeaee7609b550df071dc748028caa3f97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{animennemi_8h_ad429715f94be9c05e0f873efd01f62ff}\label{animennemi_8h_ad429715f94be9c05e0f873efd01f62ff}} 
+\index{animennemi.\+h@{animennemi.\+h}!freesurfaceennemi@{freesurfaceennemi}}
+\index{freesurfaceennemi@{freesurfaceennemi}!animennemi.\+h@{animennemi.\+h}}
+\subsubsection{\texorpdfstring{freesurfaceennemi()}{freesurfaceennemi()}}
+{\footnotesize\ttfamily void freesurfaceennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structennemi}{ennemi} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{animennemi_8h_ad429715f94be9c05e0f873efd01f62ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{animennemi_8h_a449db8c266f1c795e8de1e9e9802f90b}\label{animennemi_8h_a449db8c266f1c795e8de1e9e9802f90b}} 
+\index{animennemi.\+h@{animennemi.\+h}!initialiserennemi@{initialiserennemi}}
+\index{initialiserennemi@{initialiserennemi}!animennemi.\+h@{animennemi.\+h}}
+\subsubsection{\texorpdfstring{initialiserennemi()}{initialiserennemi()}}
+{\footnotesize\ttfamily void initialiserennemi (\begin{DoxyParamCaption}\item[{\hyperlink{structennemi}{ennemi} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{animennemi_8h_a449db8c266f1c795e8de1e9e9802f90b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{animennemi_8h_a5b88fedc1de2481522fa32569e5b7393}\label{animennemi_8h_a5b88fedc1de2481522fa32569e5b7393}} 
+\index{animennemi.\+h@{animennemi.\+h}!mvm\+\_\+alea\+\_\+enemi@{mvm\+\_\+alea\+\_\+enemi}}
+\index{mvm\+\_\+alea\+\_\+enemi@{mvm\+\_\+alea\+\_\+enemi}!animennemi.\+h@{animennemi.\+h}}
+\subsubsection{\texorpdfstring{mvm\+\_\+alea\+\_\+enemi()}{mvm\_alea\_enemi()}}
+{\footnotesize\ttfamily void mvm\+\_\+alea\+\_\+enemi (\begin{DoxyParamCaption}\item[{\hyperlink{structennemi}{ennemi} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{animennemi_8h_a5b88fedc1de2481522fa32569e5b7393_icgraph}
+\end{center}
+\end{figure}

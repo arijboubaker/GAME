@@ -1,0 +1,150 @@
+\hypertarget{text_8h}{}\section{text.\+h File Reference}
+\label{text_8h}\index{text.\+h@{text.\+h}}
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for text.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{text_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{text_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtext}{text}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structtext}{text} \hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{text_8h_ac269a46f79e51608ef78cd4cb1c45ce2}{init\+\_\+text} (\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$T, char $\ast$path)
+\item 
+void \hyperlink{text_8h_a2a40daca85de6bc00538e32c91d4220e}{update\+\_\+txt} (\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$T, int vies\+Hero)
+\item 
+void \hyperlink{text_8h_acdafc8b8de5b1a0309c13c3fe4cf9a8a}{display\+Text} (\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} T, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\item 
+void \hyperlink{text_8h_aa642dcc238a888eacbb2c80a3f604ee1}{free\+Text} (\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$T)
+\item 
+void \hyperlink{text_8h_a0ea79d8f0ab786ff1512f02154b8615f}{init\+Text\+Attributes} (\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$T)
+\item 
+int \hyperlink{text_8h_aaeca0de4db7b2b3adab7953e103ab254}{load\+Font} (\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$T, char $\ast$path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{text_8h_ae244dd94cd8740c225560d14fb17e508}\label{text_8h_ae244dd94cd8740c225560d14fb17e508}} 
+\index{text.\+h@{text.\+h}!Text@{Text}}
+\index{Text@{Text}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{Text}{Text}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structtext}{text} \hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{text_8h_acdafc8b8de5b1a0309c13c3fe4cf9a8a}\label{text_8h_acdafc8b8de5b1a0309c13c3fe4cf9a8a}} 
+\index{text.\+h@{text.\+h}!display\+Text@{display\+Text}}
+\index{display\+Text@{display\+Text}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{display\+Text()}{displayText()}}
+{\footnotesize\ttfamily void display\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text}}]{T,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{text_8h_acdafc8b8de5b1a0309c13c3fe4cf9a8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{text_8h_aa642dcc238a888eacbb2c80a3f604ee1}\label{text_8h_aa642dcc238a888eacbb2c80a3f604ee1}} 
+\index{text.\+h@{text.\+h}!free\+Text@{free\+Text}}
+\index{free\+Text@{free\+Text}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{free\+Text()}{freeText()}}
+{\footnotesize\ttfamily void free\+Text (\begin{DoxyParamCaption}\item[{\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$}]{T }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{text_8h_aa642dcc238a888eacbb2c80a3f604ee1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{text_8h_ac269a46f79e51608ef78cd4cb1c45ce2}\label{text_8h_ac269a46f79e51608ef78cd4cb1c45ce2}} 
+\index{text.\+h@{text.\+h}!init\+\_\+text@{init\+\_\+text}}
+\index{init\+\_\+text@{init\+\_\+text}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+text()}{init\_text()}}
+{\footnotesize\ttfamily int init\+\_\+text (\begin{DoxyParamCaption}\item[{\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$}]{T,  }\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{text_8h_ac269a46f79e51608ef78cd4cb1c45ce2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{text_8h_ac269a46f79e51608ef78cd4cb1c45ce2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{text_8h_a0ea79d8f0ab786ff1512f02154b8615f}\label{text_8h_a0ea79d8f0ab786ff1512f02154b8615f}} 
+\index{text.\+h@{text.\+h}!init\+Text\+Attributes@{init\+Text\+Attributes}}
+\index{init\+Text\+Attributes@{init\+Text\+Attributes}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{init\+Text\+Attributes()}{initTextAttributes()}}
+{\footnotesize\ttfamily void init\+Text\+Attributes (\begin{DoxyParamCaption}\item[{\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$}]{T }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{text_8h_a0ea79d8f0ab786ff1512f02154b8615f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{text_8h_aaeca0de4db7b2b3adab7953e103ab254}\label{text_8h_aaeca0de4db7b2b3adab7953e103ab254}} 
+\index{text.\+h@{text.\+h}!load\+Font@{load\+Font}}
+\index{load\+Font@{load\+Font}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{load\+Font()}{loadFont()}}
+{\footnotesize\ttfamily int load\+Font (\begin{DoxyParamCaption}\item[{\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$}]{T,  }\item[{char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{text_8h_aaeca0de4db7b2b3adab7953e103ab254_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{text_8h_a2a40daca85de6bc00538e32c91d4220e}\label{text_8h_a2a40daca85de6bc00538e32c91d4220e}} 
+\index{text.\+h@{text.\+h}!update\+\_\+txt@{update\+\_\+txt}}
+\index{update\+\_\+txt@{update\+\_\+txt}!text.\+h@{text.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+txt()}{update\_txt()}}
+{\footnotesize\ttfamily void update\+\_\+txt (\begin{DoxyParamCaption}\item[{\hyperlink{text_8h_ae244dd94cd8740c225560d14fb17e508}{Text} $\ast$}]{T,  }\item[{int}]{vies\+Hero }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{text_8h_a2a40daca85de6bc00538e32c91d4220e_icgraph}
+\end{center}
+\end{figure}

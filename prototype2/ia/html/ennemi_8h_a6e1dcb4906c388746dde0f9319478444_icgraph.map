@@ -1,0 +1,5 @@
+<map id="moveEnnemi" name="moveEnnemi">
+<area shape="rect" id="node2" href="$ennemi_8h.html#aeb35ec28dc6bb5926a0f122f46abb838" title="update_ennemi" alt="" coords="152,5,263,32"/>
+<area shape="rect" id="node3" href="$jeu_8h.html#ad9c436fc5815440f57648231b18e2caf" title="jouer" alt="" coords="311,5,361,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#acb1b98fe4b4002de5d1321df345bb172" title="main" alt="" coords="409,5,460,32"/>
+</map>

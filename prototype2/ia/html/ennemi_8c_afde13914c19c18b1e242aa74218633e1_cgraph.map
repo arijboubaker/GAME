@@ -1,0 +1,4 @@
+<map id="init_ennemi" name="init_ennemi">
+<area shape="rect" id="node2" href="$ennemi_8c.html#aab02c87cdc44eb526fba24e52342a999" title="loadEnnemiImages" alt="" coords="144,5,277,32"/>
+<area shape="rect" id="node3" href="$ennemi_8c.html#a33539862b507334c5b122af3ca87585c" title="initEnnemiAttributes" alt="" coords="141,56,280,83"/>
+</map>
