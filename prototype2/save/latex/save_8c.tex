@@ -1,0 +1,1078 @@
+\hypertarget{save_8c}{}\section{save.\+c File Reference}
+\label{save_8c}\index{save.\+c@{save.\+c}}
+{\ttfamily \#include \char`\"{}save.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+image.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h\char`\"{}}\\*
+Include dependency graph for save.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpersonnage}{personnage} \hyperlink{save_8c_a8fd5cd633f844d0f565c513d966ecc2a}{initperso} (\hyperlink{structpersonnage}{personnage} c, int posx, int posy, int posw, int posh, int direction, int posviex, int posviey, int nbre\+\_\+de\+\_\+vie, int \hyperlink{structscore}{score}, int spritex, int spritey, int spritew, int spriteh, int numr, int numl, int posscorex, int posscorey, int velocity, int speed, int i)
+\begin{DoxyCompactList}\small\item\em to initialize hero \end{DoxyCompactList}\item 
+\hyperlink{structbackground}{background} \hyperlink{save_8c_a99dd96b8f84fbb251e26afc643890b8a}{initialiser\+\_\+background} (\hyperlink{structbackground}{background} b, int posx, int posy, int i)
+\begin{DoxyCompactList}\small\item\em to initialize background \end{DoxyCompactList}\item 
+\hyperlink{structennemi}{ennemi} \hyperlink{save_8c_a1237b088a523ece0f6f69491c5252e2e}{initialiser\+\_\+ennemi} (\hyperlink{structennemi}{ennemi} e, int eposition\+\_\+ennemix, int eposition\+\_\+ennemiy, int epos1x, int epos1y, int epos2x, int epos2y, int eposition\+\_\+spritex, int eposition\+\_\+spritey, int eposition\+\_\+spritew, int eposition\+\_\+spriteh, int edirection)
+\begin{DoxyCompactList}\small\item\em to initialize ennemy \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a936a0790f87300c4d50a1fe7959875f5}{mouvement} (\hyperlink{structpersonnage}{personnage} $\ast$c)
+\begin{DoxyCompactList}\small\item\em to move hero \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a37690785871acb57ed11799088bec266}{animperso} (\hyperlink{structpersonnage}{personnage} $\ast$c, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to animate hero \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a4fcd9448740c67449649edb846515fae}{affichageperso} (\hyperlink{structpersonnage}{personnage} c, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to display hero \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a30a06a7282f7de8937717af0b47b31cb}{Save\+Game} (\hyperlink{structpersonnage}{personnage} c1, \hyperlink{structpersonnage}{personnage} c2, \hyperlink{structbackground}{background} b, char $\ast$file, \hyperlink{structennemi}{ennemi} e, int niveau)
+\begin{DoxyCompactList}\small\item\em to save game \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_acb4f6e609d2abc8783d41104e804ebf6}{initialiser\+\_\+save} (\hyperlink{structObjet}{Objet} $\ast$sauv, \hyperlink{structObjet}{Objet} $\ast$sauvy, \hyperlink{structObjet}{Objet} $\ast$sauvn)
+\begin{DoxyCompactList}\small\item\em pour initialiser le menu de save oui/non \end{DoxyCompactList}\item 
+int \hyperlink{save_8c_a323063e0b0a6c01cd3f01617e0df1d6e}{verif\+\_\+motion\+\_\+save} (S\+D\+L\+\_\+\+Event event, \hyperlink{structObjet}{Objet} surface)
+\begin{DoxyCompactList}\small\item\em to verify mouse motion \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a6897cc2439ee8a56c0d55f5e17bcd4dc}{clic\+\_\+souris\+\_\+save} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int curseur, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy, \hyperlink{structpersonnage}{personnage} c1, \hyperlink{structpersonnage}{personnage} c2, \hyperlink{structbackground}{background} b, char $\ast$file, \hyperlink{structennemi}{ennemi} e, int niveau)
+\begin{DoxyCompactList}\small\item\em clic avec souris dans le menu de save oui/non \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_acd785e84ec9a4180b7686e73da03dd26}{clic\+\_\+entrer\+\_\+save} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int curseur, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy, \hyperlink{structpersonnage}{personnage} c1, \hyperlink{structpersonnage}{personnage} c2, \hyperlink{structbackground}{background} b, char $\ast$file, \hyperlink{structennemi}{ennemi} e, int niveau)
+\begin{DoxyCompactList}\small\item\em clic avec bouton entrer dans le menu de save oui/non \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a26ae7b755f8291e47249e059641a1cb5}{mouse\+\_\+motion\+\_\+save} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy)
+\begin{DoxyCompactList}\small\item\em mouse motion dans le menu de save oui/non \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a7fcb6ded09f67d099c5ec72e874d2261}{deplacement\+\_\+down\+\_\+save} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy)
+\begin{DoxyCompactList}\small\item\em se deplacer vers le bas dans le menu de save oui/non \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a3d9d3c3144b808484894caf3bdded4fe}{deplacement\+\_\+up\+\_\+save} (S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy)
+\begin{DoxyCompactList}\small\item\em se deplacer vers le haut dans le menu de save oui/non \end{DoxyCompactList}\item 
+int \hyperlink{save_8c_ae98bea39bce363158739b999ebc38ceb}{deplacement\+\_\+up\+\_\+down\+\_\+save} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int $\ast$curseur, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$go, \hyperlink{structpersonnage}{personnage} c1, \hyperlink{structpersonnage}{personnage} c2, \hyperlink{structbackground}{background} b, char $\ast$file, \hyperlink{structennemi}{ennemi} e, int niveau)
+\begin{DoxyCompactList}\small\item\em se deplacer vers le bas et vers le haut dans le menu de save oui/non \end{DoxyCompactList}\item 
+int \hyperlink{save_8c_a34e892752d1de82a8306307f2e7dbfb7}{save} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int $\ast$curseur, \hyperlink{structObjet}{Objet} sauv, \hyperlink{structObjet}{Objet} sauvn, \hyperlink{structObjet}{Objet} sauvy, Mix\+\_\+\+Chunk $\ast$effect, \hyperlink{structpersonnage}{personnage} c1, \hyperlink{structpersonnage}{personnage} c2, \hyperlink{structbackground}{background} b, char $\ast$file, \hyperlink{structennemi}{ennemi} e, int niveau, int $\ast$go)
+\begin{DoxyCompactList}\small\item\em to save game \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a18376703725eb8a89b00df24948bee5f}{Load\+Game} (\hyperlink{structpersonnage}{personnage} $\ast$c1, \hyperlink{structpersonnage}{personnage} $\ast$c2, \hyperlink{structbackground}{background} $\ast$b, \hyperlink{structennemi}{ennemi} $\ast$e, int $\ast$niveau, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em to load game \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_ad429715f94be9c05e0f873efd01f62ff}{freesurfaceennemi} (\hyperlink{structennemi}{ennemi} $\ast$e)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_ad7f4f5d982725341ae87b93b9b1a91fc}{affichage\+\_\+ennemi} (\hyperlink{structennemi}{ennemi} e, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a5b88fedc1de2481522fa32569e5b7393}{mvm\+\_\+alea\+\_\+enemi} (\hyperlink{structennemi}{ennemi} $\ast$e)
+\begin{DoxyCompactList}\small\item\em 
+
+ \end{DoxyCompactList}\item 
+void \hyperlink{save_8c_a449db8c266f1c795e8de1e9e9802f90b}{initialiserennemi} (\hyperlink{structennemi}{ennemi} $\ast$e)
+\begin{DoxyCompactList}\small\item\em to initialize ennemy \end{DoxyCompactList}\item 
+\hyperlink{structpersonnage}{personnage} \hyperlink{save_8c_ad6b94a0d07757d441340deb27a5d26fe}{initiaperso} (\hyperlink{structpersonnage}{personnage} c)
+\item 
+\hyperlink{structpersonnage}{personnage} \hyperlink{save_8c_abc15402f1bc9be9a242db8d4f9403b4e}{initiaperso2} (\hyperlink{structpersonnage}{personnage} c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bouabker Arij \begin{DoxyDate}{Date}
+Mai ,2020
+\end{DoxyDate}
+testing program for game saving anad loading 
+
+\subsection{Function Documentation}
+\index{save.\+c@{save.\+c}!affichage\+\_\+ennemi@{affichage\+\_\+ennemi}}
+\index{affichage\+\_\+ennemi@{affichage\+\_\+ennemi}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{affichage\+\_\+ennemi(ennemi e, S\+D\+L\+\_\+\+Surface $\ast$screen)}{affichage_ennemi(ennemi e, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void affichage\+\_\+ennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemi}}]{e, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_ad7f4f5d982725341ae87b93b9b1a91fc}{}\label{save_8c_ad7f4f5d982725341ae87b93b9b1a91fc}
+
+
+
+
+ 
+
+to display ennemy 
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em e=ennemi} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{save_8c_ad7f4f5d982725341ae87b93b9b1a91fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!affichageperso@{affichageperso}}
+\index{affichageperso@{affichageperso}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{affichageperso(personnage c, S\+D\+L\+\_\+\+Surface $\ast$screen)}{affichageperso(personnage c, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void affichageperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a4fcd9448740c67449649edb846515fae}{}\label{save_8c_a4fcd9448740c67449649edb846515fae}
+
+
+to display hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+{\em screen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{save_8c_a4fcd9448740c67449649edb846515fae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{save_8c_a4fcd9448740c67449649edb846515fae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!animperso@{animperso}}
+\index{animperso@{animperso}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{animperso(personnage $\ast$c, S\+D\+L\+\_\+\+Surface $\ast$screen)}{animperso(personnage *c, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void animperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{c, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a37690785871acb57ed11799088bec266}{}\label{save_8c_a37690785871acb57ed11799088bec266}
+
+
+to animate hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+{\em screen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{save_8c_a37690785871acb57ed11799088bec266_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!clic\+\_\+entrer\+\_\+save@{clic\+\_\+entrer\+\_\+save}}
+\index{clic\+\_\+entrer\+\_\+save@{clic\+\_\+entrer\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{clic\+\_\+entrer\+\_\+save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char $\ast$file, ennemi e, int niveau)}{clic_entrer_save(SDL_Surface *screen, Mix_Chunk *effect, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau)}}]{\setlength{\rightskip}{0pt plus 5cm}void clic\+\_\+entrer\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{Mix\+\_\+\+Chunk $\ast$}]{effect, }
+\item[{int}]{curseur, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy, }
+\item[{{\bf personnage}}]{c1, }
+\item[{{\bf personnage}}]{c2, }
+\item[{{\bf background}}]{b, }
+\item[{char $\ast$}]{file, }
+\item[{{\bf ennemi}}]{e, }
+\item[{int}]{niveau}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_acd785e84ec9a4180b7686e73da03dd26}{}\label{save_8c_acd785e84ec9a4180b7686e73da03dd26}
+
+
+clic avec bouton entrer dans le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em effect} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em c1=personnage} & 1 \\
+\hline
+{\em c2=personnage} & 2 \\
+\hline
+{\em b=background} & \\
+\hline
+{\em file} & \\
+\hline
+{\em e=ennemy} & \\
+\hline
+{\em niveau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{save_8c_acd785e84ec9a4180b7686e73da03dd26_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_acd785e84ec9a4180b7686e73da03dd26_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!clic\+\_\+souris\+\_\+save@{clic\+\_\+souris\+\_\+save}}
+\index{clic\+\_\+souris\+\_\+save@{clic\+\_\+souris\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{clic\+\_\+souris\+\_\+save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char $\ast$file, ennemi e, int niveau)}{clic_souris_save(SDL_Surface *screen, SDL_Event event, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau)}}]{\setlength{\rightskip}{0pt plus 5cm}void clic\+\_\+souris\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{int}]{curseur, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy, }
+\item[{{\bf personnage}}]{c1, }
+\item[{{\bf personnage}}]{c2, }
+\item[{{\bf background}}]{b, }
+\item[{char $\ast$}]{file, }
+\item[{{\bf ennemi}}]{e, }
+\item[{int}]{niveau}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a6897cc2439ee8a56c0d55f5e17bcd4dc}{}\label{save_8c_a6897cc2439ee8a56c0d55f5e17bcd4dc}
+
+
+clic avec souris dans le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em event} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em c1=personnage} & 1 \\
+\hline
+{\em c2=personnage} & 2 \\
+\hline
+{\em b=background} & \\
+\hline
+{\em file} & \\
+\hline
+{\em e=ennemy} & \\
+\hline
+{\em niveau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{save_8c_a6897cc2439ee8a56c0d55f5e17bcd4dc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a6897cc2439ee8a56c0d55f5e17bcd4dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!deplacement\+\_\+down\+\_\+save@{deplacement\+\_\+down\+\_\+save}}
+\index{deplacement\+\_\+down\+\_\+save@{deplacement\+\_\+down\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{deplacement\+\_\+down\+\_\+save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, Objet sauvn, Objet sauvy)}{deplacement_down_save(SDL_Surface *screen, Mix_Chunk *effect, int *curseur, Objet sauvn, Objet sauvy)}}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+down\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{Mix\+\_\+\+Chunk $\ast$}]{effect, }
+\item[{int $\ast$}]{curseur, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a7fcb6ded09f67d099c5ec72e874d2261}{}\label{save_8c_a7fcb6ded09f67d099c5ec72e874d2261}
+
+
+se deplacer vers le bas dans le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em effect} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a7fcb6ded09f67d099c5ec72e874d2261_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!deplacement\+\_\+up\+\_\+down\+\_\+save@{deplacement\+\_\+up\+\_\+down\+\_\+save}}
+\index{deplacement\+\_\+up\+\_\+down\+\_\+save@{deplacement\+\_\+up\+\_\+down\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{deplacement\+\_\+up\+\_\+down\+\_\+save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int $\ast$curseur, Objet sauvn, Objet sauvy, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$go, personnage c1, personnage c2, background b, char $\ast$file, ennemi e, int niveau)}{deplacement_up_down_save(SDL_Surface *screen, SDL_Event event, int *curseur, Objet sauvn, Objet sauvy, Mix_Chunk *effect, int *go, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau)}}]{\setlength{\rightskip}{0pt plus 5cm}int deplacement\+\_\+up\+\_\+down\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{int $\ast$}]{curseur, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy, }
+\item[{Mix\+\_\+\+Chunk $\ast$}]{effect, }
+\item[{int $\ast$}]{go, }
+\item[{{\bf personnage}}]{c1, }
+\item[{{\bf personnage}}]{c2, }
+\item[{{\bf background}}]{b, }
+\item[{char $\ast$}]{file, }
+\item[{{\bf ennemi}}]{e, }
+\item[{int}]{niveau}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_ae98bea39bce363158739b999ebc38ceb}{}\label{save_8c_ae98bea39bce363158739b999ebc38ceb}
+
+
+se deplacer vers le bas et vers le haut dans le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em event} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em sauv} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em effect} & \\
+\hline
+{\em c1=personnage} & 1 \\
+\hline
+{\em c2=personnage} & 2 \\
+\hline
+{\em b=background} & \\
+\hline
+{\em file} & \\
+\hline
+{\em e=ennemy} & \\
+\hline
+{\em niveau} & \\
+\hline
+{\em go} & \\
+\hline
+{\em c=personnage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_ae98bea39bce363158739b999ebc38ceb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_ae98bea39bce363158739b999ebc38ceb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!deplacement\+\_\+up\+\_\+save@{deplacement\+\_\+up\+\_\+save}}
+\index{deplacement\+\_\+up\+\_\+save@{deplacement\+\_\+up\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{deplacement\+\_\+up\+\_\+save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, Objet sauvn, Objet sauvy)}{deplacement_up_save(SDL_Surface *screen, Mix_Chunk *effect, int *curseur, Objet sauvn, Objet sauvy)}}]{\setlength{\rightskip}{0pt plus 5cm}void deplacement\+\_\+up\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{Mix\+\_\+\+Chunk $\ast$}]{effect, }
+\item[{int $\ast$}]{curseur, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a3d9d3c3144b808484894caf3bdded4fe}{}\label{save_8c_a3d9d3c3144b808484894caf3bdded4fe}
+
+
+se deplacer vers le haut dans le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em effect} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a3d9d3c3144b808484894caf3bdded4fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!freesurfaceennemi@{freesurfaceennemi}}
+\index{freesurfaceennemi@{freesurfaceennemi}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{freesurfaceennemi(ennemi $\ast$e)}{freesurfaceennemi(ennemi *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void freesurfaceennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemi} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_ad429715f94be9c05e0f873efd01f62ff}{}\label{save_8c_ad429715f94be9c05e0f873efd01f62ff}
+
+
+
+
+ 
+
+to free memory from ennemy 
+\begin{DoxyParams}{Parameters}
+{\em e=ennemi} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{save_8c_ad429715f94be9c05e0f873efd01f62ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!initialiser\+\_\+background@{initialiser\+\_\+background}}
+\index{initialiser\+\_\+background@{initialiser\+\_\+background}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initialiser\+\_\+background(background b, int posx, int posy, int i)}{initialiser_background(background b, int posx, int posy, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf background} initialiser\+\_\+background (
+\begin{DoxyParamCaption}
+\item[{{\bf background}}]{b, }
+\item[{int}]{posx, }
+\item[{int}]{posy, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a99dd96b8f84fbb251e26afc643890b8a}{}\label{save_8c_a99dd96b8f84fbb251e26afc643890b8a}
+
+
+to initialize background 
+
+\begin{DoxyReturn}{Returns}
+background 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{save_8c_a99dd96b8f84fbb251e26afc643890b8a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!initialiser\+\_\+ennemi@{initialiser\+\_\+ennemi}}
+\index{initialiser\+\_\+ennemi@{initialiser\+\_\+ennemi}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initialiser\+\_\+ennemi(ennemi e, int eposition\+\_\+ennemix, int eposition\+\_\+ennemiy, int epos1x, int epos1y, int epos2x, int epos2y, int eposition\+\_\+spritex, int eposition\+\_\+spritey, int eposition\+\_\+spritew, int eposition\+\_\+spriteh, int edirection)}{initialiser_ennemi(ennemi e, int eposition_ennemix, int eposition_ennemiy, int epos1x, int epos1y, int epos2x, int epos2y, int eposition_spritex, int eposition_spritey, int eposition_spritew, int eposition_spriteh, int edirection)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ennemi} initialiser\+\_\+ennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemi}}]{e, }
+\item[{int}]{eposition\+\_\+ennemix, }
+\item[{int}]{eposition\+\_\+ennemiy, }
+\item[{int}]{epos1x, }
+\item[{int}]{epos1y, }
+\item[{int}]{epos2x, }
+\item[{int}]{epos2y, }
+\item[{int}]{eposition\+\_\+spritex, }
+\item[{int}]{eposition\+\_\+spritey, }
+\item[{int}]{eposition\+\_\+spritew, }
+\item[{int}]{eposition\+\_\+spriteh, }
+\item[{int}]{edirection}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a1237b088a523ece0f6f69491c5252e2e}{}\label{save_8c_a1237b088a523ece0f6f69491c5252e2e}
+
+
+to initialize ennemy 
+
+\begin{DoxyReturn}{Returns}
+ennemy 
+\end{DoxyReturn}
+\index{save.\+c@{save.\+c}!initialiser\+\_\+save@{initialiser\+\_\+save}}
+\index{initialiser\+\_\+save@{initialiser\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initialiser\+\_\+save(\+Objet $\ast$sauv, Objet $\ast$sauvy, Objet $\ast$sauvn)}{initialiser_save(Objet *sauv, Objet *sauvy, Objet *sauvn)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{{\bf Objet} $\ast$}]{sauv, }
+\item[{{\bf Objet} $\ast$}]{sauvy, }
+\item[{{\bf Objet} $\ast$}]{sauvn}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_acb4f6e609d2abc8783d41104e804ebf6}{}\label{save_8c_acb4f6e609d2abc8783d41104e804ebf6}
+
+
+pour initialiser le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sauvy} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em sauv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{save_8c_acb4f6e609d2abc8783d41104e804ebf6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!initialiserennemi@{initialiserennemi}}
+\index{initialiserennemi@{initialiserennemi}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initialiserennemi(ennemi $\ast$e)}{initialiserennemi(ennemi *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiserennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemi} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a449db8c266f1c795e8de1e9e9802f90b}{}\label{save_8c_a449db8c266f1c795e8de1e9e9802f90b}
+
+
+to initialize ennemy 
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{save_8c_a449db8c266f1c795e8de1e9e9802f90b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!initiaperso@{initiaperso}}
+\index{initiaperso@{initiaperso}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initiaperso(personnage c)}{initiaperso(personnage c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf personnage} initiaperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_ad6b94a0d07757d441340deb27a5d26fe}{}\label{save_8c_ad6b94a0d07757d441340deb27a5d26fe}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{save_8c_ad6b94a0d07757d441340deb27a5d26fe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{save_8c_ad6b94a0d07757d441340deb27a5d26fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!initiaperso2@{initiaperso2}}
+\index{initiaperso2@{initiaperso2}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initiaperso2(personnage c)}{initiaperso2(personnage c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf personnage} initiaperso2 (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_abc15402f1bc9be9a242db8d4f9403b4e}{}\label{save_8c_abc15402f1bc9be9a242db8d4f9403b4e}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{save_8c_abc15402f1bc9be9a242db8d4f9403b4e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{save_8c_abc15402f1bc9be9a242db8d4f9403b4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!initperso@{initperso}}
+\index{initperso@{initperso}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{initperso(personnage c, int posx, int posy, int posw, int posh, int direction, int posviex, int posviey, int nbre\+\_\+de\+\_\+vie, int score, int spritex, int spritey, int spritew, int spriteh, int numr, int numl, int posscorex, int posscorey, int velocity, int speed, int i)}{initperso(personnage c, int posx, int posy, int posw, int posh, int direction, int posviex, int posviey, int nbre_de_vie, int score, int spritex, int spritey, int spritew, int spriteh, int numr, int numl, int posscorex, int posscorey, int velocity, int speed, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf personnage} initperso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c, }
+\item[{int}]{posx, }
+\item[{int}]{posy, }
+\item[{int}]{posw, }
+\item[{int}]{posh, }
+\item[{int}]{direction, }
+\item[{int}]{posviex, }
+\item[{int}]{posviey, }
+\item[{int}]{nbre\+\_\+de\+\_\+vie, }
+\item[{int}]{score, }
+\item[{int}]{spritex, }
+\item[{int}]{spritey, }
+\item[{int}]{spritew, }
+\item[{int}]{spriteh, }
+\item[{int}]{numr, }
+\item[{int}]{numl, }
+\item[{int}]{posscorex, }
+\item[{int}]{posscorey, }
+\item[{int}]{velocity, }
+\item[{int}]{speed, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a8fd5cd633f844d0f565c513d966ecc2a}{}\label{save_8c_a8fd5cd633f844d0f565c513d966ecc2a}
+
+
+to initialize hero 
+
+\begin{DoxyReturn}{Returns}
+personnage 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{save_8c_a8fd5cd633f844d0f565c513d966ecc2a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!Load\+Game@{Load\+Game}}
+\index{Load\+Game@{Load\+Game}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{Load\+Game(personnage $\ast$c1, personnage $\ast$c2, background $\ast$b, ennemi $\ast$e, int $\ast$niveau, S\+D\+L\+\_\+\+Surface $\ast$screen)}{LoadGame(personnage *c1, personnage *c2, background *b, ennemi *e, int *niveau, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void Load\+Game (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{c1, }
+\item[{{\bf personnage} $\ast$}]{c2, }
+\item[{{\bf background} $\ast$}]{b, }
+\item[{{\bf ennemi} $\ast$}]{e, }
+\item[{int $\ast$}]{niveau, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a18376703725eb8a89b00df24948bee5f}{}\label{save_8c_a18376703725eb8a89b00df24948bee5f}
+
+
+to load game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1=personnage1} & \\
+\hline
+{\em c2=personnage2} & \\
+\hline
+{\em screen} & \\
+\hline
+{\em b=} & background \\
+\hline
+{\em e=ennemi} & \\
+\hline
+{\em niveau} & \\
+\hline
+{\em screen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\index{save.\+c@{save.\+c}!mouse\+\_\+motion\+\_\+save@{mouse\+\_\+motion\+\_\+save}}
+\index{mouse\+\_\+motion\+\_\+save@{mouse\+\_\+motion\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{mouse\+\_\+motion\+\_\+save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, Mix\+\_\+\+Chunk $\ast$effect, int $\ast$curseur, Objet sauvn, Objet sauvy)}{mouse_motion_save(SDL_Surface *screen, SDL_Event event, Mix_Chunk *effect, int *curseur, Objet sauvn, Objet sauvy)}}]{\setlength{\rightskip}{0pt plus 5cm}void mouse\+\_\+motion\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{Mix\+\_\+\+Chunk $\ast$}]{effect, }
+\item[{int $\ast$}]{curseur, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a26ae7b755f8291e47249e059641a1cb5}{}\label{save_8c_a26ae7b755f8291e47249e059641a1cb5}
+
+
+mouse motion dans le menu de save oui/non 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em event} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em effect} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{save_8c_a26ae7b755f8291e47249e059641a1cb5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a26ae7b755f8291e47249e059641a1cb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!mouvement@{mouvement}}
+\index{mouvement@{mouvement}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{mouvement(personnage $\ast$c)}{mouvement(personnage *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void mouvement (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a936a0790f87300c4d50a1fe7959875f5}{}\label{save_8c_a936a0790f87300c4d50a1fe7959875f5}
+
+
+to move hero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c=personnage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{save_8c_a936a0790f87300c4d50a1fe7959875f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!mvm\+\_\+alea\+\_\+enemi@{mvm\+\_\+alea\+\_\+enemi}}
+\index{mvm\+\_\+alea\+\_\+enemi@{mvm\+\_\+alea\+\_\+enemi}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{mvm\+\_\+alea\+\_\+enemi(ennemi $\ast$e)}{mvm_alea_enemi(ennemi *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void mvm\+\_\+alea\+\_\+enemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemi} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a5b88fedc1de2481522fa32569e5b7393}{}\label{save_8c_a5b88fedc1de2481522fa32569e5b7393}
+
+
+
+
+ 
+
+to move ennemy 
+\begin{DoxyParams}{Parameters}
+{\em e=ennemi} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{save_8c_a5b88fedc1de2481522fa32569e5b7393_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!save@{save}}
+\index{save@{save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{save(\+S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Event event, int $\ast$curseur, Objet sauv, Objet sauvn, Objet sauvy, Mix\+\_\+\+Chunk $\ast$effect, personnage c1, personnage c2, background b, char $\ast$file, ennemi e, int niveau, int $\ast$go)}{save(SDL_Surface *screen, SDL_Event event, int *curseur, Objet sauv, Objet sauvn, Objet sauvy, Mix_Chunk *effect, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau, int *go)}}]{\setlength{\rightskip}{0pt plus 5cm}int save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{int $\ast$}]{curseur, }
+\item[{{\bf Objet}}]{sauv, }
+\item[{{\bf Objet}}]{sauvn, }
+\item[{{\bf Objet}}]{sauvy, }
+\item[{Mix\+\_\+\+Chunk $\ast$}]{effect, }
+\item[{{\bf personnage}}]{c1, }
+\item[{{\bf personnage}}]{c2, }
+\item[{{\bf background}}]{b, }
+\item[{char $\ast$}]{file, }
+\item[{{\bf ennemi}}]{e, }
+\item[{int}]{niveau, }
+\item[{int $\ast$}]{go}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a34e892752d1de82a8306307f2e7dbfb7}{}\label{save_8c_a34e892752d1de82a8306307f2e7dbfb7}
+
+
+to save game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & \\
+\hline
+{\em event} & \\
+\hline
+{\em curseur} & \\
+\hline
+{\em sauv} & \\
+\hline
+{\em sauvn} & \\
+\hline
+{\em sauvy} & \\
+\hline
+{\em effect} & \\
+\hline
+{\em c1=personnage} & 1 \\
+\hline
+{\em c2=personnage} & 2 \\
+\hline
+{\em b=background} & \\
+\hline
+{\em file} & \\
+\hline
+{\em e=ennemy} & \\
+\hline
+{\em niveau} & \\
+\hline
+{\em go} & \\
+\hline
+{\em c=personnage} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a34e892752d1de82a8306307f2e7dbfb7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{save_8c_a34e892752d1de82a8306307f2e7dbfb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!Save\+Game@{Save\+Game}}
+\index{Save\+Game@{Save\+Game}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{Save\+Game(personnage c1, personnage c2, background b, char $\ast$file, ennemi e, int niveau)}{SaveGame(personnage c1, personnage c2, background b, char *file, ennemi e, int niveau)}}]{\setlength{\rightskip}{0pt plus 5cm}void Save\+Game (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage}}]{c1, }
+\item[{{\bf personnage}}]{c2, }
+\item[{{\bf background}}]{b, }
+\item[{char $\ast$}]{file, }
+\item[{{\bf ennemi}}]{e, }
+\item[{int}]{niveau}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a30a06a7282f7de8937717af0b47b31cb}{}\label{save_8c_a30a06a7282f7de8937717af0b47b31cb}
+
+
+to save game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1=personnage1} & \\
+\hline
+{\em c2=personnage2} & \\
+\hline
+{\em b=background} & \\
+\hline
+{\em file} & \\
+\hline
+{\em e=ennemy} & \\
+\hline
+{\em niveau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a30a06a7282f7de8937717af0b47b31cb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{save.\+c@{save.\+c}!verif\+\_\+motion\+\_\+save@{verif\+\_\+motion\+\_\+save}}
+\index{verif\+\_\+motion\+\_\+save@{verif\+\_\+motion\+\_\+save}!save.\+c@{save.\+c}}
+\subsubsection[{\texorpdfstring{verif\+\_\+motion\+\_\+save(\+S\+D\+L\+\_\+\+Event event, Objet surface)}{verif_motion_save(SDL_Event event, Objet surface)}}]{\setlength{\rightskip}{0pt plus 5cm}int verif\+\_\+motion\+\_\+save (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{{\bf Objet}}]{surface}
+\end{DoxyParamCaption}
+)}\hypertarget{save_8c_a323063e0b0a6c01cd3f01617e0df1d6e}{}\label{save_8c_a323063e0b0a6c01cd3f01617e0df1d6e}
+
+
+to verify mouse motion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & \\
+\hline
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+entier 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{save_8c_a323063e0b0a6c01cd3f01617e0df1d6e_icgraph}
+\end{center}
+\end{figure}
+
+

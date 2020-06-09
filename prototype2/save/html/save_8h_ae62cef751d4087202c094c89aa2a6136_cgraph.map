@@ -1,0 +1,10 @@
+<map id="save" name="save">
+<area shape="rect" id="node2" href="$save_8c.html#a18bf5d532bf38f5ae58182f295eff632" title="se deplacer vers le bas et vers le haut dans le menu de save oui/non " alt="" coords="104,107,295,133"/>
+<area shape="rect" id="node3" href="$save_8c.html#a6897cc2439ee8a56c0d55f5e17bcd4dc" title="clic avec souris dans le menu de save oui/non " alt="" coords="368,56,487,83"/>
+<area shape="rect" id="node6" href="$save_8c.html#a26ae7b755f8291e47249e059641a1cb5" title="mouse motion dans le menu de save oui/non " alt="" coords="356,5,499,32"/>
+<area shape="rect" id="node7" href="$save_8c.html#acd785e84ec9a4180b7686e73da03dd26" title="clic avec bouton entrer dans le menu de save oui/non " alt="" coords="369,107,486,133"/>
+<area shape="rect" id="node8" href="$save_8c.html#a7fcb6ded09f67d099c5ec72e874d2261" title="se deplacer vers le bas dans le menu de save oui/non " alt="" coords="343,157,512,184"/>
+<area shape="rect" id="node9" href="$save_8c.html#a5788d566ec0a8b06b636c1a8c20088c4" title="se deplacer vers le haut dans le menu de save oui/non " alt="" coords="351,208,503,235"/>
+<area shape="rect" id="node4" href="$save_8c.html#a323063e0b0a6c01cd3f01617e0df1d6e" title="to verify mouse motion " alt="" coords="560,31,688,57"/>
+<area shape="rect" id="node5" href="$save_8c.html#a30a06a7282f7de8937717af0b47b31cb" title="to save game " alt="" coords="581,93,667,120"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="deplacement_up_save" name="deplacement_up_save">
+<area shape="rect" id="node2" href="$save_8h.html#a18bf5d532bf38f5ae58182f295eff632" title="se deplacer vers le bas et vers le haut dans le menu de save oui/non " alt="" coords="205,5,396,32"/>
+<area shape="rect" id="node3" href="$save_8h.html#ae62cef751d4087202c094c89aa2a6136" title="to save game " alt="" coords="444,5,495,32"/>
+<area shape="rect" id="node4" href="$mainsave_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="543,5,593,32"/>
+</map>

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['clic_5fentrer_5fsave',['clic_entrer_save',['../save_8c.html#acd785e84ec9a4180b7686e73da03dd26',1,'clic_entrer_save(SDL_Surface *screen, Mix_Chunk *effect, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau):&#160;save.c'],['../save_8h.html#acd785e84ec9a4180b7686e73da03dd26',1,'clic_entrer_save(SDL_Surface *screen, Mix_Chunk *effect, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau):&#160;save.c']]],
+  ['clic_5fsouris_5fsave',['clic_souris_save',['../save_8c.html#a6897cc2439ee8a56c0d55f5e17bcd4dc',1,'clic_souris_save(SDL_Surface *screen, SDL_Event event, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau):&#160;save.c'],['../save_8h.html#a6897cc2439ee8a56c0d55f5e17bcd4dc',1,'clic_souris_save(SDL_Surface *screen, SDL_Event event, int curseur, Objet sauvn, Objet sauvy, personnage c1, personnage c2, background b, char *file, ennemi e, int niveau):&#160;save.c']]]
+];

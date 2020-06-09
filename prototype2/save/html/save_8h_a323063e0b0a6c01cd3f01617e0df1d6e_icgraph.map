@@ -1,0 +1,7 @@
+<map id="verif_motion_save" name="verif_motion_save">
+<area shape="rect" id="node2" href="$save_8h.html#a6897cc2439ee8a56c0d55f5e17bcd4dc" title="clic avec souris dans le menu de save oui/non " alt="" coords="193,5,312,32"/>
+<area shape="rect" id="node6" href="$save_8h.html#a26ae7b755f8291e47249e059641a1cb5" title="mouse motion dans le menu de save oui/non " alt="" coords="181,56,324,83"/>
+<area shape="rect" id="node3" href="$save_8h.html#ae98bea39bce363158739b999ebc38ceb" title="se deplacer vers le bas et vers le haut dans le menu de save oui/non " alt="" coords="372,31,563,57"/>
+<area shape="rect" id="node4" href="$save_8h.html#a34e892752d1de82a8306307f2e7dbfb7" title="to save game " alt="" coords="611,31,661,57"/>
+<area shape="rect" id="node5" href="$mainsave_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="709,31,760,57"/>
+</map>

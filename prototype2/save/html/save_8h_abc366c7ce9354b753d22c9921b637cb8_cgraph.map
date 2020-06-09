@@ -1,0 +1,7 @@
+<map id="LoadGame" name="LoadGame">
+<area shape="rect" id="node2" href="$save_8c.html#a9be036e5fe763a31cee28c8cdc199624" title="initperso" alt="" coords="177,5,247,32"/>
+<area shape="rect" id="node4" href="$save_8c.html#a5ec34018ef7ed70d79fa164046b9c157" title="initialiser_background" alt="" coords="139,56,285,83"/>
+<area shape="rect" id="node6" href="$save_8c.html#a670dae333b32ff7e4dee9831cc4e0693" title="initialiser_ennemi" alt="" coords="151,107,273,133"/>
+<area shape="rect" id="node3" href="$structvie.html#a2c29f60898de16e1306bd1043fa38dc9" title="vie::vie" alt="" coords="383,5,447,32"/>
+<area shape="rect" id="node5" href="$structbackground.html#a2ae567836475a466a6ac7052cf6a2441" title="background::background" alt="" coords="333,56,497,83"/>
+</map>
