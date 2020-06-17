@@ -1,54 +1,112 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <SDL/SDL.h>
-#include <SDL/SDL_image.h>
-#include <SDL/SDL_mixer.h>
-#include "quiz.h"
-#include <SDL/SDL_ttf.h>
-#include <time.h>
-int main(int argc,char *argv[])
+#include <stdlib.h>
+#include "boundigbox.h"
+#include "SDL/SDL.h"
+
+#define LARGEURECRAN 636
+#define HAUTEURECRAN 444
+#define TITREECRAN "Collision bounding box SDL"
+#define ICONE "ma photo.png"
+int direction = 0;
+int speed = 0;
+
+int collision(SDL_Rect a, SDL_Rect b)
 {
+	if(!(a.x > b.x+b.w || a.y > b.y+b.h || a.x+a.w < b.x || a.y+a.h < b.y)){
+	return 1;
+}
+	return 0;
+}
 
-
-    int d;
-
-    srand(time(NULL));
-    d=rand()%3+1;
-
+int main(int argc, char *argv[])
+{
+    SDL_Surface *ecran = NULL, *msg = NULL;
     TTF_Init();
-    if(TTF_Init()==-1)
+    TTF_Font *font;
+    font = TTF_OpenFont("theme.ttf",20);
+    SDL_Color textColor = {0,0,0};
+    msg = TTF_RenderText_Solid(font,"TEST",textColor);
+    SDL_Rect textRect= {280,300};
+    Mix_OpenAudio(44100,MIX_DEFAULT_FORMAT,MIX_DEFAULT_CHANNELS,1024);
+    Mix_Music *music;
+    music = Mix_LoadMUS("test.wav");
+    SDL_Rect positionImg1={150,240},positionImg2={320,240};
+    int continuer = 1;
+    SDL_Event event;
+    ecran = initEcran(TITREECRAN, ICONE,LARGEURECRAN , HAUTEURECRAN);
+    int color = 0x000000;
+    while(continuer)
     {
-        fprintf(stderr,"ERREUR INIT: %s \n",TTF_GetError());
-        exit(EXIT_FAILURE);
+        SDL_PollEvent(&event);
+	speed = 0;	
+	if(event.type == SDL_QUIT) 
+		continuer = 0;
+	if(event.type == SDL_KEYDOWN)
+	{
+		if(event.key.keysym.sym == SDLK_ESCAPE){
+			continuer = 0;
+		}
+		if(event.key.keysym.sym == SDLK_RIGHT){
+			direction = 2;
+			speed = 1;
+		}
+		if(event.key.keysym.sym == SDLK_LEFT){
+			direction = 0;
+			speed = 1;
+		}
+		if(event.key.keysym.sym == SDLK_UP){
+			direction = 1;
+			speed = 1;
+		}
+		if(event.key.keysym.sym == SDLK_DOWN){
+			direction = 3;
+			speed = 1;
+		}
+	}
+	SDL_FillRect(ecran,&ecran->clip_rect,color);
+
+        blitImageSurSurface(ecran, "ma photo.png", &positionImg2);
+        blitImageSurSurface(ecran, "ma photo.png", &positionImg1);
+
+	if(collision(positionImg1,positionImg2))
+	{
+		color = 0xffffff;
+		if(direction == 0)
+			positionImg1.x += 2;
+		if(direction == 1)
+			positionImg1.y += 2;
+		if(direction == 2)
+			positionImg1.x -= 2;
+		if(direction == 3)
+			positionImg1.y -= 2;
+		Mix_PlayMusic(music,1);
+	}
+	else
+	{
+		color = 0x000000;
+	}
+
+	if(direction == 2)
+	{
+		positionImg1.x += speed;
+	}
+	if(direction == 0)
+	{
+		positionImg1.x -= speed;
+	}
+	if(direction == 1)
+	{
+		positionImg1.y -= speed;
+	}
+	if(direction == 3)
+	{
+		positionImg1.y += speed;
+	}
+
+	SDL_BlitSurface(msg,NULL,ecran,&textRect);
+        SDL_Flip(ecran);
+	SDL_Delay(16);
     }
-    SDL_Color couleurnoir= {0,0,0};
-    SDL_Surface *texte = NULL, *backg=NULL ; //declaration des variables globale
-    SDL_Rect positiontexte,positiond;
-    positiontexte.x=380;
-    positiontexte.y=280;
-    TTF_Font *police;//(pointeur contient parametre de la police)
-    SDL_Init(SDL_INIT_VIDEO); // Initialisation de la SDL
-    SDL_Surface *ecran =NULL;
-    police=TTF_OpenFont("font.ttf",200);
-    ecran=SDL_SetVideoMode(1920,1080, 32,SDL_ANYFORMAT); // Ouverture de la fenêtre
-    backg = IMG_Load("quiz.png");
-    positiond.x=0 ;
-    positiond.y=0 ;
-    SDL_BlitSurface(backg,NULL, ecran, &positiond);
-    SDL_Flip(ecran);
-    texte=TTF_RenderText_Blended(police,"ENIGMA",couleurnoir);
-    SDL_BlitSurface(texte,NULL,ecran,&positiontexte);
-    SDL_Flip(ecran);
-    SDL_Delay(2000);
-
-    SDL_BlitSurface(backg,NULL, ecran, &positiond);
-    SDL_Flip(ecran);
-    quiz(ecran,d);
-    reponse(ecran,d);
-    SDL_FreeSurface(backg);
-    TTF_CloseFont(police);
-    TTF_Quit();
-    SDL_Quit(); // Arrêt de la SL
-
-    return EXIT_SUCCESS; // Fermeture du programme
+    SDL_Quit();
+    return 0;
 }
