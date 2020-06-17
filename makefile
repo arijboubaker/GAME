@@ -1,7 +1,8 @@
-testimage:menu.o main.o
-	gcc menu.o main.o -o testimage -lSDL -lSDL_ttf -lSDL_image -lSDL_mixer -g
-main.o:main.c
-	gcc -c main.c -g
-menu.o:menu.c
-	gcc -c menu.c -g
-
+q:main.o quiz.o
+	gcc main.o quiz.o -o jeu -lSDL_image -lSDL -lSDL -lSDL_mixer -lSDL_ttf -g 
+main3.o:main3.c 
+	gcc -c main.c -lSDL_image -lSDL -lSDL -lSDL_mixer -lSDL_ttf -g
+quiz.o:quiz.c
+	gcc -c quiz.c -lSDL_image -lSDL -lSDL -lSDL_mixer -lSDL_ttf -g
+cln: 
+	rm *.o q -f

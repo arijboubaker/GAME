@@ -1,36 +1,54 @@
-#include "defs.h"
-#include "jeu.h"
+#include <stdlib.h>
+#include <stdio.h>
 #include <SDL/SDL.h>
-
-
-int main ( int argc, char** argv )
+#include <SDL/SDL_image.h>
+#include <SDL/SDL_mixer.h>
+#include "quiz.h"
+#include <SDL/SDL_ttf.h>
+#include <time.h>
+int main(int argc,char *argv[])
 {
 
-	SDL_Surface *screen;
-	// initialize SDL video
-	if ( SDL_Init( SDL_INIT_VIDEO ) < 0 ) 
-	{
-		printf( "Unable to init SDL: %s\n", SDL_GetError() );
-		return 1;
-	}
 
-	// make sure SDL cleans up before exit
-	atexit(SDL_Quit);
+    int d;
 
-	// create a new window
-	screen = SDL_SetVideoMode(1600, 700, 32,
-	                          SDL_HWSURFACE|SDL_DOUBLEBUF | SDL_SRCALPHA);
-	if ( !screen ) 
-	{
-		printf("Unable to set %d * %d video: %s\n",SCREEN_W, SCREEN_H, SDL_GetError());
-		return 1;
-	}
+    srand(time(NULL));
+    d=rand()%3+1;
 
+    TTF_Init();
+    if(TTF_Init()==-1)
+    {
+        fprintf(stderr,"ERREUR INIT: %s \n",TTF_GetError());
+        exit(EXIT_FAILURE);
+    }
+    SDL_Color couleurnoir= {0,0,0};
+    SDL_Surface *texte = NULL, *backg=NULL ; //declaration des variables globale
+    SDL_Rect positiontexte,positiond;
+    positiontexte.x=380;
+    positiontexte.y=280;
+    TTF_Font *police;//(pointeur contient parametre de la police)
+    SDL_Init(SDL_INIT_VIDEO); // Initialisation de la SDL
+    SDL_Surface *ecran =NULL;
+    police=TTF_OpenFont("font.ttf",200);
+    ecran=SDL_SetVideoMode(1920,1080, 32,SDL_ANYFORMAT); // Ouverture de la fenêtre
+    backg = IMG_Load("quiz.png");
+    positiond.x=0 ;
+    positiond.y=0 ;
+    SDL_BlitSurface(backg,NULL, ecran, &positiond);
+    SDL_Flip(ecran);
+    texte=TTF_RenderText_Blended(police,"ENIGMA",couleurnoir);
+    SDL_BlitSurface(texte,NULL,ecran,&positiontexte);
+    SDL_Flip(ecran);
+    SDL_Delay(2000);
 
-	jouer(screen);
+    SDL_BlitSurface(backg,NULL, ecran, &positiond);
+    SDL_Flip(ecran);
+    quiz(ecran,d);
+    reponse(ecran,d);
+    SDL_FreeSurface(backg);
+    TTF_CloseFont(police);
+    TTF_Quit();
+    SDL_Quit(); // Arrêt de la SL
 
-
-	// all is well ;)
-	printf("Exited cleanly\n");
-	return 0;
+    return EXIT_SUCCESS; // Fermeture du programme
 }
