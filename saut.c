@@ -20,7 +20,7 @@ rect.w=78 ;
 
 SDL_Rect possoldRel;
     possoldRel.x = 0;
-    posMsoldRel.y = 0;
+    possoldRel.y = 0;
 
     
     const double g = 9.81;
