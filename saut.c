@@ -18,9 +18,9 @@ rect.y=535;
 rect.h=117 ; 
 rect.w=78 ; 
 
-SDL_Rect posMarioRel;
-    posMarioRel.x = 0;
-    posMarioRel.y = 0;
+SDL_Rect possoldRel;
+    possoldRel.x = 0;
+    posMsoldRel.y = 0;
 
     
     const double g = 9.81;
@@ -71,8 +71,8 @@ while(running)
                                    {  
 
             rect.y = 900-(image2->h);
-            posMarioRel.x=(int)(v_x*t);
-            posMarioRel.y=(int)((v_y*t)-((g*pow(t,2)/2000)));
+            possoldRel.x=(int)(v_x*t);
+            possoldRel.y=(int)((v_y*t)-((g*pow(t,2)/2000)));
 
          
 if(right==1)
@@ -99,8 +99,8 @@ if(right==1)
 }
 if(left==1)
 {
-            rect.x = rect.x - 0.1*posMarioRel.x;
-            rect.y = rect.y + posMarioRel.y;
+            rect.x = rect.x - 0.1*possoldRel.x;
+            rect.y = rect.y + possoldRel.y;
  if( rect.y>1060)
 {
   rect.y=513;
