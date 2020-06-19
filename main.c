@@ -1,35 +1,83 @@
-
-#include <SDL/SDL.h>
 #include <stdlib.h>
-#include <math.h>
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
-#include "saut.h"
-int main()
+#include <SDL/SDL_rotozoom.h>
+#include <SDL/SDL_ttf.h>
+#include "fichier.h"
+
+/**
+*  @file main.c 
+*  @brief rotozoom stage3.
+*  @author Mohamed kalech .
+* @vesion 0.1.
+* @date  mai 21 ,2020
+*
+* version final  
+*
+*/
+
+void main()
 {
-SDL_Surface *screen=NULL;
-SDL_Surface *image=NULL;
-SDL_Surface *image1=NULL;
+    SDL_Init;
+    
+    SDL_Surface *ecran=NULL;
+    SDL_Surface *image;
+    
+    SDL_Rect position;
+    SDL_Event event;
+    position.x=0;
+    position.y=0;
 
-SDL_Rect positionFond;
-int running=1;
-SDL_Init(SDL_INIT_VIDEO);
-positionFond.x=0;
-positionFond.y=0;
-positionFond.w=1920 ;
-positionFond.h=1080 ; 
-    screen = SDL_SetVideoMode(1920, 1080, 32, SDL_HWSURFACE|SDL_DOUBLEBUF);
-    SDL_WM_SetCaption("Chargement Backgroung", NULL);  
-image = IMG_Load("1.png");
-
-image1 = IMG_Load("map.png"); 
+ image=SDL_LoadBMP("em3.bmp");
+    
+   
     
 
-animate(screen ,  image1 , image,  &positionFond  , &running);
  
-SDL_FreeSurface(image);
-SDL_FreeSurface(image1);
- SDL_Quit();
+    int continuer = 1;
+    
+   
+    
+    SDL_Init(SDL_INIT_VIDEO);
+    ecran = SDL_SetVideoMode(730, 530, 32, SDL_HWSURFACE);
+    SDL_WM_SetCaption("Enigme", NULL);
+     TTF_Init();
+     enigme3 e ;
 
-    return EXIT_SUCCESS;
+
+     
+    
+
+     
+     
+     while (continuer)
+    {
+        SDL_BlitSurface(image, NULL, ecran,&position);
+        roto(ecran,image,image,position);
+        //continuer=0;
+        
+
+        while(SDL_PollEvent(&event))
+        switch(event.type)
+        {
+              
+    case SDL_QUIT:
+        continuer = 0;
+        break;
+   
+  }
+}
+    
+   
+   
+    SDL_Quit;
+    
+        
+        EXIT_SUCCESS;
+    
+          
+        
 }

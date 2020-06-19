@@ -1,11 +1,8 @@
-
-p:main.o  scrolling.o scroll.o 
-	gcc main.o   scrolling.o scroll.o  -o p -lSDL -lSDL_image -lm -g
+prog:main.o fct.o
+	gcc main.o fct.o -lSDL -lSDL_image -lSDL_ttf -lSDL_gfx -o prog
 main.o:main.c
-	gcc -c main.c -lSDL -lSDL_image -g
-scrolling.o:scrolling.c
-	gcc -c scrolling.c -lSDL -lSDL_image -g
-scroll.o:scroll.c
-	gcc -c scroll.c -lSDL -lSDL_image -g
-
-
+	gcc main.c  -lSDL -lSDL_image -lSDL_ttf -lSDL_gfx -c
+fct.o:fct.c
+	gcc -c fct.c
+SDL_rotozoom.o:SDL_rotozoom.c
+	gcc -c SDL_rotozoom.c
